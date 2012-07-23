@@ -290,6 +290,7 @@ a:hover, .b-link:hover {
 	}
 	.b-head-menu a:hover {
 		background-position: 0 -35px;
+        color: #fff;
 	}
 	.b-head-menu ._active {
 		background-position: 0 -70px;
@@ -815,7 +816,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     top: 154px;
 }
 .b-individual-map .travel {
-    left: 700px;
+    left: 660px;
     top: 54px;
 }
 .b-individual-map .health {
