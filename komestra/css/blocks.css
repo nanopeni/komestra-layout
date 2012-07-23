@@ -334,6 +334,7 @@ a:hover, .b-link:hover {
 .b-index-title {
 	font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
 	font-size: 23px;
+    font-weight: normal;
 	color: #149c3c;
 	text-align: center;
 	text-transform: uppercase;
@@ -469,7 +470,8 @@ a:hover, .b-link:hover {
 	.b-rubric-menu-title__name {
 		height: 51px;
 		font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
-		font-size: 20px;
+		font-size: 19px;
+        font-weight: normal;
 		line-height: 24px;
 		color: #fff;
 		text-transform: uppercase;
@@ -479,7 +481,7 @@ a:hover, .b-link:hover {
 	}
 
 .b-rubric-menu-item {
-	font-weight: bold;
+	font-weight: normal;
     font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
 	color: #fff;
 	text-decoration: none;
@@ -1194,7 +1196,7 @@ h2.green-bubble {
 /* corporate-map */
 
 .b-corporate-map {
-    height: 385px;
+    height: 398px;
     background: url(../img/corporate_map.jpg) 50% 0 no-repeat;
     position: relative;
 }
@@ -1265,7 +1267,7 @@ h2.green-bubble {
     background: url("../img/buttons-sprite.png") no-repeat scroll 0 -99px transparent;
     color: #FFFFFF;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
     height: 39px;
     line-height: 34px;
     position: relative;
