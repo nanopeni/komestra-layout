@@ -1,0 +1,240 @@
+.dev-layout {
+    background: url('kom-index-2-b-layout.jpg') top center;
+    position: absolute;
+    height: 983px;
+    width: 100%;
+    left: 0px;
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.b-page {
+    opacity: 0.7;
+}
+
+
+.content-menu {
+    height: 200px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
+}
+
+h1 {
+    font-size: 29px;
+    letter-spacing: 0.55px;
+}
+
+
+.content-menu h1 {
+    background: url("../img/the-sprite.png") repeat scroll 10px 204px transparent;
+    height: 79px;
+    line-height: 79px;
+    margin-left: -21px;
+    padding-left: 275px;
+    position: absolute;
+    top: 82px;
+    width: 717px;
+}
+
+.content-menu ul {
+    padding-left: 285px;
+    height: 200px;
+    background-position: 0 -4px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+}
+
+.content-menu li {
+    float: left;
+    height: 81px;
+    margin-right: 12px;
+    width: 147px;
+}
+
+.content-menu a {
+    display: block;
+    width: 147px;
+    height: 25px;
+    text-align: center;
+    padding-top: 56px;
+    border: 1px solid #e4e5d3;
+}
+.content-menu a:hover {
+    border-color: #ffd44d;
+    background-color: #fff;
+}
+
+.content-menu ul.family {
+    background-image: url("../img/family-medium.png");
+}
+
+.content-menu .individual a {
+    background-image: url('../img/ind-icons-small.png');
+}
+
+.content-menu .individual li.property a {
+    background-position: -27px -12px;
+}
+.content-menu .individual li.travel a {
+    background-position: -188px -12px;
+}
+.content-menu .individual li.health a {
+    background-position: -348px -12px;
+}
+.content-menu .individual li.car a {
+    background-position: -508px -12px;
+}
+
+
+
+
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.col1 {
+    margin-top: 11px;
+    width: 209px;
+    float: left;
+}
+
+h2.green-bubble {
+    background: url("../img/the-sprite.png") no-repeat scroll -13px -249px transparent;
+    color: #FFFFFF;
+    height: 41px;
+    line-height: 29px;
+    width: 224px;
+    margin-bottom: -2px;
+}
+
+
+.col1 h3 {
+    color: #10642C;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding-top: 4px;
+    width: 186px;
+}
+
+.col1 ul {
+    font-size: 15px;
+    line-height: 16px;
+}
+
+
+.col1 ul li:first-child, .col1 h4:first-child, .col1 ul li.active, .col1 ul li.active + li {
+    border: none;
+}
+
+.col1 ul li, .col1 h4 {
+    border-top: 1px dotted #D8E7B3;
+}
+
+.col1 ul li {
+    margin-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 6px;
+    width: 186px;
+}
+
+.col1 ul a {
+    background: url("../img/the-sprite.png") no-repeat scroll -15px -124px transparent;
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.col1 ul li.active {
+    background: url("../img/the-sprite.png") no-repeat scroll -254px -241px transparent;
+    border: medium none;
+    color: #FFFFFF;
+    height: 44px;
+    line-height: 48px;
+    margin-left: 0;
+    margin-top: -7px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-top: 0;
+    width: 200px;
+}
+
+
+.col2 {
+    float: left;
+    margin-left: 42px;
+    margin-top: 17px;
+    font-size: 13px;
+    width: 429px;
+}
+
+.col2 h2 {
+    color: #337F4A;
+    font-size: 17px;
+    letter-spacing: -0.23px;
+    text-align: left;
+}
+
+.col2 ul {
+    margin-bottom: 12px;
+    margin-top: 22px;
+}
+
+.col2 ul li {
+    background: url("../img/the-sprite.png") no-repeat scroll -16px -11px transparent;
+    padding-bottom: 10px;
+    line-height: 18px;
+    padding-left: 21px;
+}
+
+
+.col3 {
+    float: left;
+    margin-left: 20px;
+    width: 250px;
+}
+
+.small .b-banner-slider__arr._prev {
+    background-image: url("../img/banner_slider_arr_prev_small.png");
+}
+
+.small .b-banner-slider__arr._next {
+    background-image: url("../img/banner_slider_arr_next_small.png");
+}
+
+.small .b-banner-slider__arr:hover {
+    background-position: 0 -25px;
+}
+.small .b-banner-slider__arr {
+    height: 24px;
+    width: 24px;
+}
+
+.small .b-banner-slider-item__title {
+    height: 40px;
+}
+
+.small .b-banner-slider-item__pic {
+    height: 130px;
+}
+
+.small .b-banner-slider .b-banner-slider-item {
+    width: 250px;
+}
+
+.small .b-banner-slider-item__title {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 19px;
+}
