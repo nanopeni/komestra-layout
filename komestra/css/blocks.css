@@ -290,6 +290,7 @@ a:hover, .b-link:hover {
 	}
 	.b-head-menu a:hover {
 		background-position: 0 -35px;
+        color: #fff;
 	}
 	.b-head-menu ._active {
 		background-position: 0 -70px;
