@@ -1467,3 +1467,47 @@ h2.green-bubble {
     text-transform: uppercase;
 }
 
+/* 3-b */
+
+.content-menu ul.building {
+    background: url("../img/building-medium.png") no-repeat scroll 4px 15px transparent;
+}
+
+.content-menu .corporate a {
+    background-image: url('../img/corp-icons-small.png');
+}
+
+.content-menu .corporate li.responsibility a {
+    background-position: -4px -1px;
+}
+.content-menu .corporate li.cargo a {
+    background-position: -442px -1px;
+}
+.content-menu .corporate li.health a {
+    background-position: -146px -1px;
+}
+.content-menu .corporate li.car a {
+    background-position: -291px -1px;
+}
+
+.content-menu .corporate li.property a {
+    background-position: -582px -1px;
+}
+
+
+.content-menu ul.corporate {
+    padding-left: 223px;
+}
+
+.content-menu .corporate li {
+    margin-left: 10px;
+    margin-right: 0;
+    width: 135px;
+}
+
+.content-menu .corporate li a {
+    width: 135px;
+}
+
+
+
