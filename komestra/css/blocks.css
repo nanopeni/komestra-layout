@@ -1419,11 +1419,11 @@ h2.green-bubble {
 }
 
 .nav-rubrics .orange:hover h3 {
-    background-position: -163px -224px;
+    background-position: -163px -223px;
 }
 
 .nav-rubrics .green:hover h3 {
-    background-position: 0 -224px;
+    background-position: 0 -223px;
 }
 
 .nav-rubrics .orange:hover ul {
