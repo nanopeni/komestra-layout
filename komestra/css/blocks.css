@@ -334,6 +334,7 @@ a:hover, .b-link:hover {
 .b-index-title {
 	font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
 	font-size: 23px;
+    font-weight: normal;
 	color: #149c3c;
 	text-align: center;
 	text-transform: uppercase;
@@ -469,7 +470,8 @@ a:hover, .b-link:hover {
 	.b-rubric-menu-title__name {
 		height: 51px;
 		font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
-		font-size: 20px;
+		font-size: 19px;
+        font-weight: normal;
 		line-height: 24px;
 		color: #fff;
 		text-transform: uppercase;
@@ -479,7 +481,7 @@ a:hover, .b-link:hover {
 	}
 
 .b-rubric-menu-item {
-	font-weight: bold;
+	font-weight: normal;
     font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
 	color: #fff;
 	text-decoration: none;
@@ -1194,7 +1196,7 @@ h2.green-bubble {
 /* corporate-map */
 
 .b-corporate-map {
-    height: 385px;
+    height: 398px;
     background: url(../img/corporate_map.jpg) 50% 0 no-repeat;
     position: relative;
 }
@@ -1265,7 +1267,7 @@ h2.green-bubble {
     background: url("../img/buttons-sprite.png") no-repeat scroll 0 -99px transparent;
     color: #FFFFFF;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
     height: 39px;
     line-height: 34px;
     position: relative;
@@ -1368,3 +1370,86 @@ h2.green-bubble {
 }
 
 /* end of corporate map */
+
+
+/* nav-rubrics */
+.b-news-short__main-left {
+    margin-left: 32px;
+    width: 473px;
+}
+.nav-rubrics div, .b-news-short__main-left {
+    float: left;
+    position: relative;
+}
+
+.nav-rubrics ul {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    background-image: url('../img/buttons-sprite.png');
+    margin-top: -12px;
+    padding:14px;
+    font-size: 12px;
+}
+
+.nav-rubrics ul a {
+    color: #fff;
+}
+
+.nav-rubrics .orange ul {
+    background-position: -407px -302px;
+    width: 142px;
+    margin-left: -9px;
+}
+
+.nav-rubrics .green ul {
+    background-position: -204px -302px;
+    width: 134px;
+    margin-left: 12px;
+}
+
+
+.nav-rubrics .orange h3 {
+    background-position: -163px -161px;
+    width: 163px;
+}
+
+.nav-rubrics .green h3 {
+    background-position: 0 -161px;
+    width: 151px;
+}
+
+.nav-rubrics .orange:hover h3 {
+    background-position: -163px -224px;
+}
+
+.nav-rubrics .green:hover h3 {
+    background-position: 0 -224px;
+}
+
+.nav-rubrics .orange:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-rubrics .green:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.nav-rubrics h3 {
+    background-image: url("../img/buttons-sprite.png");
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: normal;
+    height: 52px;
+    line-height: 16px;
+    padding-bottom: 0;
+    padding-left: 12px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
