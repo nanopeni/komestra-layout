@@ -787,7 +787,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     opacity: 1;
 }
 
-.b-individual-map .yellow-button ul, .b-individual-map .inactive, .b-individual-map .yellow-button .highlighted {
+.b-individual-map .yellow-button ul, .b-individual-map .inactive, .b-individual-map .yellow-button .highlighted, .nav-rubrics ul {
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
