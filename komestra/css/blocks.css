@@ -104,6 +104,10 @@ a:hover, .b-link:hover {
 		color: #898989;
 	}
 
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
 .b-input-box {
 	width: 13px;
 	height: 13px;
