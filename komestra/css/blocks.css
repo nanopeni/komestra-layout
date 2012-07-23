@@ -301,19 +301,6 @@ a:hover, .b-link:hover {
 		background-position: 0 -105px;
 	}
 
-.b-individual-map {
-	height: 385px;
-	background: url(../img/individual_map.jpg) 50% 0 no-repeat;
-    position: relative;
-}
-
-.b-individual-map .holder {
-    position: relative;
-    margin:0 auto;
-    height: 385px;
-    width: 1000px;
-}
-
 .b-foot-copy {
 	font-size: 12px;
 }
@@ -493,6 +480,7 @@ a:hover, .b-link:hover {
 
 .b-rubric-menu-item {
 	font-weight: bold;
+    font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
 	color: #fff;
 	text-decoration: none;
 	display: block;
@@ -694,7 +682,22 @@ a:hover, .b-link:hover {
 
 
     /* individual layout */
-h1, h2, h3, h4, h5, .yellow-button {
+
+.b-individual-map {
+    height: 385px;
+    background: url(../img/individual_map.jpg) 50% 0 no-repeat;
+    position: relative;
+}
+
+.b-individual-map .holder {
+    position: relative;
+    margin:0 auto;
+    height: 385px;
+    width: 1000px;
+}
+
+
+h1, h2, h3, h4, h5, .yellow-button, .green-button {
     font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
 }
 
@@ -720,8 +723,8 @@ h1, h2, h3, h4, h5, .yellow-button {
     z-index: 2;
 }
 
-.b-individual-map .dev {
-    background: url('../img/individual-map-dev.jpg') no-repeat scroll center center transparent;
+.debug .b-individual-map .dev {
+    background: url('../img/temp/individual-map-dev.jpg') no-repeat scroll center center transparent;
     opacity: 0.6;
 }
 
@@ -847,3 +850,521 @@ h1, h2, h3, h4, h5, .yellow-button {
     width: 201px;
 }
 
+
+
+
+
+/* kom-index-2-b page */
+.debug .dev-layout-kom-index-2-b {
+    background: url('../img/temp/kom-index-2-b-layout.jpg') top center;
+    position: absolute;
+    height: 983px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.debug .b-page {
+    opacity: 0.7;
+}
+
+
+.content-menu {
+    height: 200px;
+    position: relative;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
+}
+
+h1 {
+    font-size: 29px;
+    letter-spacing: 0.55px;
+}
+
+
+.content-menu h1 {
+    background: url("../img/the-sprite.png") repeat scroll 10px -296px transparent;
+    height: 79px;
+    line-height: 79px;
+    margin-left: -21px;
+    padding-left: 275px;
+    position: absolute;
+    top: 82px;
+    width: 717px;
+}
+.content-menu ul {
+    padding-left: 285px;
+    height: 200px;
+    background-position: 0 -4px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+}
+
+.content-menu li {
+    float: left;
+    height: 81px;
+    margin-right: 12px;
+    width: 147px;
+}
+
+.content-menu li a {
+    display: block;
+    width: 147px;
+    height: 25px;
+    text-align: center;
+    padding-top: 56px;
+    border: 1px solid #e4e5d3;
+}
+.content-menu li a:hover {
+    border-color: #ffd44d;
+    background-color: #fff;
+}
+
+.content-menu ul.family {
+    background-image: url("../img/family-medium.png");
+}
+
+.upper-links {
+    left: 366px;
+    position: absolute;
+    top: 169px;
+    z-index: 5;
+}
+.upper-links a {
+    text-decoration: none;
+    border-bottom: 1px dotted #289f50;
+}
+
+.upper-links span {
+    background: url("../img/the-sprite.png") no-repeat scroll right -742px transparent;
+    padding-left: 6px;
+    padding-right: 13px;
+}
+.content-menu .individual a {
+    background-image: url('../img/ind-icons-small.png');
+}
+
+.content-menu .individual li.property a {
+    background-position: -27px -12px;
+}
+.content-menu .individual li.travel a {
+    background-position: -188px -12px;
+}
+.content-menu .individual li.health a {
+    background-position: -348px -12px;
+}
+.content-menu .individual li.car a {
+    background-position: -508px -12px;
+}
+
+
+
+
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.col1 {
+    margin-top: 11px;
+    width: 209px;
+    float: left;
+}
+
+h2.green-bubble {
+    background: url("../img/the-sprite.png") no-repeat scroll -13px -249px transparent;
+    color: #FFFFFF;
+    height: 41px;
+    line-height: 29px;
+    width: 224px;
+    margin-bottom: -2px;
+}
+
+
+.col1 h3 {
+    color: #10642C;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding-top: 4px;
+    width: 186px;
+}
+
+.col1 ul {
+    font-size: 15px;
+    line-height: 16px;
+}
+
+
+.col1 ul li:first-child, .col1 h4:first-child, .col1 ul li.active, .col1 ul li.active + li {
+    border: none;
+}
+
+.col1 ul li, .col1 h4 {
+    border-top: 1px dotted #D8E7B3;
+}
+
+.col1 ul li {
+    margin-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 6px;
+    width: 186px;
+}
+
+.col1 ul a {
+    background: url("../img/the-sprite.png") no-repeat scroll -15px -124px transparent;
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.col1 ul li.active {
+    background: url("../img/the-sprite.png") no-repeat scroll -254px -241px transparent;
+    border: medium none;
+    color: #FFFFFF;
+    height: 44px;
+    line-height: 48px;
+    margin-left: 0;
+    margin-top: -7px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-top: 0;
+    width: 200px;
+}
+
+
+.col2 {
+    float: left;
+    margin-left: 42px;
+    margin-top: 17px;
+    font-size: 13px;
+    width: 429px;
+}
+
+.col2 h2 {
+    color: #337F4A;
+    font-size: 17px;
+    letter-spacing: -0.23px;
+    text-align: left;
+}
+
+.col2 ul {
+    margin-bottom: 12px;
+    margin-top: 22px;
+}
+
+.col2 ul li {
+    background: url("../img/the-sprite.png") no-repeat scroll -16px -11px transparent;
+    padding-bottom: 10px;
+    line-height: 18px;
+    padding-left: 21px;
+}
+
+
+.col3 {
+    float: left;
+    margin-left: 20px;
+    margin-top: -36px;
+    width: 250px;
+}
+
+.col3 h3 {
+    color: #127530;
+    font-size: 18px;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+/* smaller banner rotator */
+.small .b-banner-slider__arr._prev {
+    background-image: url("../img/banner_slider_arr_prev_small.png");
+}
+
+.small .b-banner-slider__arr._next {
+    background-image: url("../img/banner_slider_arr_next_small.png");
+}
+
+.small .b-banner-slider__arr:hover {
+    background-position: 0 -25px;
+}
+.small .b-banner-slider__arr {
+    height: 24px;
+    width: 24px;
+}
+
+.small .b-banner-slider-item__title {
+    height: 40px;
+}
+
+.small .b-banner-slider-item__pic {
+    height: 130px;
+}
+
+.small .b-banner-slider .b-banner-slider-item {
+    width: 250px;
+}
+
+.small .b-banner-slider-item__title {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 17px;
+}
+
+.small .b-banner-slider-nav-item__normal div, .small .b-banner-slider-nav-item__active div {
+    height: 9px;
+    width: 9px;
+}
+
+.small .b-banner-slider .b-banner-slider-nav {
+    bottom: 2px;
+}
+
+/* end of smaller banner rotator */
+
+
+.col3 ._green {
+    margin-top: 30px;
+}
+
+.col3 ._orange {
+    margin-top: 16px;
+}
+
+/* footer */
+
+.footer-buttons {
+    clear: both;
+    padding-top: 10px;
+    font-family: 'OpenSansBold', 'Myriad Pro', 'Trebuchet MS', sans-serif;
+}
+
+.footer-buttons li {
+    background: url("../img/the-sprite.png") repeat-x scroll -1px -670px transparent;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    height: 68px;
+}
+
+.footer-buttons a {
+    background-image: url("../img/the-sprite.png");
+    display: block;
+    line-height: 72px;
+    padding-left: 83px;
+    text-decoration: none;
+}
+.footer-buttons .one {
+    margin-right: 15px;
+    width: 282px;
+}
+.footer-buttons .two {
+    margin-right: 15px;
+    width: 398px;
+}
+.footer-buttons .three {
+    width: 234px;
+}
+
+.footer-buttons .one a {
+    background-position: -3px -367px;
+}
+.footer-buttons .two a {
+    background-position: 0 -461px;
+}
+.footer-buttons .three a {
+    background-position: 0 -558px;
+}
+
+
+/* end of kom-index-2-b */
+
+
+
+/* corporate-map */
+
+.b-corporate-map {
+    height: 385px;
+    background: url(../img/corporate_map.jpg) 50% 0 no-repeat;
+    position: relative;
+}
+
+.b-corporate-map .holder {
+    position: relative;
+    margin:0 auto;
+    height: 385px;
+    width: 1000px;
+}
+
+
+.b-corporate-map .layer {
+    height: 385px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+.b-corporate-map .inactive {
+    background: url('../img/corporate-map-white.jpg') no-repeat scroll center top transparent;
+    opacity: 0;
+}
+.b-corporate-map .visible .inactive {
+    opacity: 1;
+}
+
+.b-corporate-map .vectors {
+    background: url('../img/corporate-vectors.png') no-repeat scroll center top transparent;
+    z-index: 2;
+}
+
+.debug .b-corporate-map .dev {
+    background: url('../img/temp/corporate-map-dev.jpg') no-repeat scroll center top transparent;
+    opacity: 0.6;
+}
+
+.b-corporate-map .green-button {
+    position: absolute;
+    width: 200px;
+}
+
+
+.b-corporate-map .green-button ul {
+    background: url("../img/buttons-sprite.png") no-repeat scroll left bottom transparent;
+    line-height: 22px;
+    margin-left: -5px;
+    margin-top: -7px;
+    opacity: 0;
+    padding-bottom: 34px;
+    padding-left: 37px;
+    padding-top: 13px;
+    width: 145px;
+    z-index: -1;
+    position: relative;
+}
+
+.b-corporate-map .green-button .highlighted {
+    background: url('../img/corporate-map-hl-sprite-bullet.png');
+    opacity: 0;
+    position:absolute;
+    z-index: 2;
+}
+
+.b-corporate-map h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll 0 -99px transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 39px;
+    line-height: 34px;
+    position: relative;
+    text-align: center;
+    width: 184px;
+    z-index: 4;
+}
+
+.b-corporate-map .green-button:hover h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -225px -99px transparent;
+}
+
+.b-corporate-map .y-list:hover ul {
+    opacity: 1;
+    z-index: 3;
+}
+
+.b-corporate-map .green-button:hover .highlighted {
+    opacity: 1;
+}
+
+.b-corporate-map .green-button .highlighted:hover {
+    opacity: 1;
+}
+
+.b-corporate-map .green-button ul, .b-corporate-map .inactive, .b-corporate-map .green-button .highlighted {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*
+.b-corporate-map .yellow-button .highlighted {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+*/
+
+.b-corporate-map .responsibility {
+    left: 146px;
+    top: 260px;
+}
+.b-corporate-map .cargo {
+    left: 225px;
+    top: 59px;
+}
+.b-corporate-map .health {
+    left: 480px;
+    top: 59px;
+}
+.b-corporate-map .car {
+    left: 541px;
+    top: 266px;
+}
+.b-corporate-map .property {
+    left: 690px;
+    top: 120px;
+}
+
+.b-corporate-map .responsibility .highlighted {
+    background-position: -541px -1px;
+    height: 253px;
+    left: -171px;
+    top: -259px;
+    width: 355px;
+}
+.b-corporate-map .cargo .highlighted {
+    background-position: -5px 0;
+    height: 171px;
+    left: 22px;
+    top: 53px;
+    width: 276px;
+}
+.b-corporate-map .health .highlighted {
+    background-position: -324px -179px;
+    height: 84px;
+    left: -26px;
+    top: 118px;
+    width: 101px;
+}
+.b-corporate-map .car .highlighted {
+    background-position: -357px -288px;
+    height: 88px;
+    left: -7px;
+    top: -84px;
+    width: 161px;
+}
+.b-corporate-map .property .highlighted {
+    background-position: 0 -288px;
+    height: 273px;
+    left: -71px;
+    top: -92px;
+    width: 344px;
+}
+
+/* end of corporate map */

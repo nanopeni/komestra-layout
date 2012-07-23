@@ -98,6 +98,10 @@ body, input, textarea, select, button {
 	position: relative;
 }
 
+.b-green {
+    background: url(../img/page-green.png) repeat-x;
+}
+
 .b-head {
 	width: 100%;
 	overflow: hidden;
