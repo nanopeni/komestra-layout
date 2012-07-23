@@ -760,7 +760,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 .b-individual-map h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll 0 0 transparent;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: normal;
     height: 39px;
     line-height: 34px;
     text-align: center;
