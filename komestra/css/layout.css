@@ -1,0 +1,183 @@
+/* Author: Htmlhero (http://htmlhero.ru) */
+
+/* Fonts
+*******************************/
+
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/opensans-regular.eot');
+	src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-regular.woff') format('woff'),
+		url('../fonts/opensans-regular.ttf') format('truetype'),
+		url('../fonts/opensans-regular.svg#OpenSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/opensans-bold.eot');
+	src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-bold.woff') format('woff'),
+		url('../fonts/opensans-bold.ttf') format('truetype'),
+		url('../fonts/opensans-bold.svg#OpenSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/opensans-semibold.eot');
+	src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-semibold.woff') format('woff'),
+		url('../fonts/opensans-semibold.ttf') format('truetype'),
+		url('../fonts/opensans-semibold.svg#OpenSansSemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansItalic';
+	src: url('../fonts/opensans-italic.eot');
+	src: url('../fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-italic.woff') format('woff'),
+		url('../fonts/opensans-italic.ttf') format('truetype'),
+		url('../fonts/opensans-italic.svg#OpenSansItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSansSemiboldItalic';
+	src: url('../fonts/opensans-semibolditalic.eot');
+	src: url('../fonts/opensans-semibolditalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-semibolditalic.woff') format('woff'),
+		url('../fonts/opensans-semibolditalic.ttf') format('truetype'),
+		url('../fonts/opensans-semibolditalic.svg#OpenSansSemiboldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'OpenSansCondensedLight';
+	src: url('../fonts/opensans-condlight.eot');
+	src: url('../fonts/opensans-condlight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-condlight.woff') format('woff'),
+		url('../fonts/opensans-condlight.ttf') format('truetype'),
+		url('../fonts/opensans-condlight.svg#OpenSansCondensedLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* Globals
+*******************************/
+
+html, body {
+	height: 100%;
+}
+body {
+	background: #fff;
+	font-size: 14px;
+	line-height: 1.286;
+	color: #515151;
+}
+body, input, textarea, select, button {
+	font-family: 'OpenSansRegular', 'Myriad Pro', 'Trebuchet MS', sans-serif;
+}
+
+/* Structure
+*******************************/
+
+.b-page {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	background: url(../img/page.png) repeat-x;
+	position: relative;
+}
+
+.b-green {
+    background: url(../img/page-green.png) repeat-x;
+}
+
+.b-head {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+	.b-head .b-head-panel {
+        height: 80px;
+		position: relative;
+		z-index: 1;
+	}
+	.b-head .b-head-menu {
+		width: 950px;
+		position: relative;
+		margin: 0 auto -35px;
+        height: 35px;
+        z-index: 5;
+	}
+
+.b-body {
+	position: relative;
+	padding-bottom: 87px;
+}
+	.b-body__wrap {
+		width: 950px;
+		margin: auto;
+	}
+	.b-body__left {
+		width: 240px;
+		float: left;
+	}
+	.b-body__right {
+		width: 240px;
+		float: right;
+	}
+	.b-body__center {
+		margin: 0 280px;
+	}
+		.b-body__center__wrap {
+			width: 100%;
+			float: left;
+		}
+
+.b-foot {
+	width: 100%;
+	height: 53px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 6px solid #33b15d;
+}
+	.b-foot__wrap {
+		width: 950px;
+		margin: auto;
+	}
+	.b-foot__left {
+		width: 240px;
+		float: left;
+	}
+	.b-foot__right {
+		width: 240px;
+		float: right;
+	}
+	.b-foot__center {
+		margin: 0 280px;
+	}
+		.b-foot__center__wrap {
+			width: 100%;
+			float: left;
+		}
+	.b-foot .b-foot-copy {
+		margin-top: 7px;
+	}
+	.b-foot .b-foot-map {
+		float: left;
+		margin-top: 5px;
+	}
+	.b-foot .b-foot-search {
+		float: right;
+	}
