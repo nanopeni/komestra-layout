@@ -99,7 +99,7 @@ body, input, textarea, select, button {
 }
 
 .b-green {
-    background: url(../img/page-green.png) repeat-x;
+    background: #f9fef2 url('../img/page-green-wide.png') repeat-x;
 }
 
 .b-head {

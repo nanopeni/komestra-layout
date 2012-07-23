@@ -1201,7 +1201,6 @@ h2.green-bubble {
 
 .b-corporate-map {
     height: 398px;
-    background: url(../img/corporate_map.jpg) 50% 0 no-repeat;
     position: relative;
 }
 
@@ -1214,6 +1213,8 @@ h2.green-bubble {
 
 
 .b-corporate-map .layer {
+    background-position: center top;
+    background-repeat: no-repeat;
     height: 385px;
     left: 0;
     margin-left: 0;
@@ -1221,9 +1222,19 @@ h2.green-bubble {
     width: 100%;
 }
 
+.b-corporate-map .wide {
+    margin-left: -27px;
+    margin-top: -76px;
+    height: 496px;
+}
+
+.b-corporate-map .active {
+    background-image: url('../img/corporate-map-wide.jpg');
+}
+
 
 .b-corporate-map .inactive {
-    background: url('../img/corporate-map-white.jpg') no-repeat scroll center top transparent;
+    background-image: url('../img/corporate-map-wide-white.jpg');
     opacity: 0;
 }
 .b-corporate-map .visible .inactive {
@@ -1232,7 +1243,6 @@ h2.green-bubble {
 
 .b-corporate-map .vectors {
     background: url('../img/corporate-vectors.png') no-repeat scroll center top transparent;
-    z-index: 2;
 }
 
 .debug .b-corporate-map .dev {
