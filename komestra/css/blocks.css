@@ -694,6 +694,7 @@ input:focus::-webkit-input-placeholder {
     height: 385px;
     background: url(../img/individual_map.jpg) 50% 0 no-repeat;
     position: relative;
+    margin-left: -80px;
 }
 
 .b-individual-map .holder {
