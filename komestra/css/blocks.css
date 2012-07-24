@@ -1165,6 +1165,7 @@ h2.green-bubble {
 
 .footer-buttons a {
     background-image: url("../img/the-sprite.png");
+    background-repeat: no-repeat;
     display: block;
     line-height: 72px;
     padding-left: 83px;
@@ -1183,7 +1184,7 @@ h2.green-bubble {
 }
 
 .footer-buttons .one a {
-    background-position: -3px -367px;
+    background-position: -915px -428px;
 }
 .footer-buttons .two a {
     background-position: 0 -461px;
