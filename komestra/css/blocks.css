@@ -346,18 +346,29 @@ input:focus::-webkit-input-placeholder {
 }
 
 .b-banner-slider-item {
-	background: #fff;
-	text-decoration: none;
-	display: block;
-	border-radius: 5px;
+    background: #fff;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
 }
-	.b-banner-slider-item__title {
-		height: 51px;
-		font-size: 18px;
-		line-height: 21px;
-		font-weight: bold;
-		text-align: center;
-		display: block;
+
+.version2 .b-banner-slider-item {
+	background: url('../img/buttons-sprite.png') 0 -685px;
+    font-family: Arial, 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
+}
+
+.b-banner-slider-item__title {
+    height: 51px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.version2 .b-banner-slider-item__title {
+		font-weight: normal;
+        color: #289f50;
 	}
 	.b-banner-slider-item__pic {
 		height: 254px;
@@ -372,18 +383,35 @@ input:focus::-webkit-input-placeholder {
 	.b-banner-slider-nav-item__active {
 		display: none;
 	}
-	.b-banner-slider-nav-item__normal div,
-	.b-banner-slider-nav-item__active div {
-		width: 18px;
-		height: 18px;
+.b-banner-slider-nav-item__normal div,
+.b-banner-slider-nav-item__active div {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    border-radius: 9px;
+}
+	.version2 .b-banner-slider-nav-item__normal div,
+	.version2 .b-banner-slider-nav-item__active div {
+		width: 15px;
+		height: 15px;
 		position: relative;
-		border-radius: 9px;
+        padding-left: 3px;
+        border: none;
 	}
-	.b-banner-slider-nav-item__normal div {
-		background: #a4bdac;
+
+.b-banner-slider-nav-item__normal div {
+    background: #a4bdac;
+}
+	.version2 .b-banner-slider-nav-item__normal div {
+        background: url('../img/buttons-sprite.png') -37px -657px;
 	}
-	.b-banner-slider-nav-item__active div {
-		background: #ffcb08;
+
+.b-banner-slider-nav-item__active div {
+    background: #ffcb08;
+}
+
+	.version2 .b-banner-slider-nav-item__active div {
+        background: url('../img/buttons-sprite.png') -15px -658px;
 	}
 
 .b-banner-slider-nav-item._active {}
@@ -402,17 +430,25 @@ input:focus::-webkit-input-placeholder {
 		position: relative;
 		padding: 4px;
 	}
-	.b-banner-slider-nav__bg {
-		width: 100%;
-		height: 100%;
-		background: #37433e;
-		position: absolute;
-		top: 0;
-		left: 0;
-		border-radius: 13px;
+.b-banner-slider-nav__bg {
+    width: 100%;
+    height: 100%;
+    background: #37433e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 13px;
+}
+	.version2 .b-banner-slider-nav__bg {
+		background: none;
+		border-radius: 0;
 	}
-	.b-banner-slider-nav__list {
-		position: relative;
+
+.b-banner-slider-nav__list {
+    position: relative;
+}
+	.version2 .b-banner-slider-nav__list {
+        top: 5px;
 	}
 		.b-banner-slider-nav__list li {
 			float: left;
@@ -437,24 +473,47 @@ input:focus::-webkit-input-placeholder {
 		width: 390px;
 		float: left;
 	}
-	.b-banner-slider__arr {
-		width: 38px;
-		height: 38px;
-		position: absolute;
-		top: 8px;
-		cursor: pointer;
-	}
+.b-banner-slider__arr {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+}
+
+    .version2 .b-banner-slider__arr {
+        height: 28px;
+        top: 166px;
+        width: 28px;
+    }
+
 	.b-banner-slider__arr:hover {
 		background-position: 0 -38px;
 	}
-	.b-banner-slider__arr._prev {
-		background-image: url(../img/banner_slider_arr_prev.png);
-		left: 7px;
-	}
-	.b-banner-slider__arr._next {
-		background-image: url(../img/banner_slider_arr_next.png);
-		right: 7px;
-	}
+    .version2 .b-banner-slider__arr._prev:hover {
+        background: url("../img/buttons-sprite.png") -8px -621px;
+    }
+    .version2 .b-banner-slider__arr._next:hover {
+        background: url(../img/buttons-sprite.png) -44px -621px;
+    }
+
+.b-banner-slider__arr._prev {
+    background-image: url(../img/banner_slider_arr_prev.png);
+    left: 7px;
+}
+.version2 .b-banner-slider__arr._prev {
+             background: url("../img/buttons-sprite.png") -8px -592px;
+             left: -13px;
+         }
+.b-banner-slider__arr._next {
+    background-image: url(../img/banner_slider_arr_next.png);
+    right: 7px;
+}
+
+.b-banner-slider__arr._next {
+        background: url(../img/buttons-sprite.png) -44px -592px;
+        right: -15px;
+    }
 	.b-banner-slider .b-banner-slider-nav {
 		width: 100%;
 		position: absolute;
