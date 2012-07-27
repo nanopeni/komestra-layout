@@ -510,7 +510,7 @@ input:focus::-webkit-input-placeholder {
     right: 7px;
 }
 
-.b-banner-slider__arr._next {
+.version2 .b-banner-slider__arr._next {
         background: url(../img/buttons-sprite.png) -44px -592px;
         right: -15px;
     }
