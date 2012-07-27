@@ -559,17 +559,22 @@ input:focus::-webkit-input-placeholder {
 	margin: 0 -4px;
 	box-shadow: 0 1px 1px rgba(2, 3, 3, .6);
 }
-	.b-rubric-menu-item__arr {
-		width: 48px;
-		height: 51px;
-		background: 50% 50% no-repeat;
-		float: left;
-	}
-	.b-rubric-menu-item__name {
-		height: 51px;
-		display: block;
-		margin-left: 48px;
-	}
+
+
+.b-rubric-menu._orange .b-rubric-menu-item__name {
+    background: url("../img/rubric_menu_item_arr_orange.png") no-repeat scroll 13px center transparent;
+}
+
+.b-rubric-menu._green .b-rubric-menu-item__name {
+    background: url("../img/rubric_menu_item_arr_green.png") no-repeat scroll 13px center transparent;
+}
+
+.b-rubric-menu-item__name {
+    display:table-cell;
+    vertical-align: middle;
+    height: 51px;
+    padding-left: 48px;
+}
 
 .b-rubric-menu {}
 
@@ -595,9 +600,7 @@ input:focus::-webkit-input-placeholder {
 		background: linear-gradient(#43d17c, #1c9d47);
 		-pie-background: linear-gradient(#43d17c, #1c9d47);
 	}
-	.b-rubric-menu._green .b-rubric-menu-item__arr {
-		background-image: url(../img/rubric_menu_item_arr_green.png);
-	}
+
 
 .b-rubric-menu._orange {}
 	.b-rubric-menu._orange .b-rubric-menu-title {
@@ -620,9 +623,6 @@ input:focus::-webkit-input-placeholder {
 		background: -o-linear-gradient(#feda59, #eb8b04);
 		background: linear-gradient(#feda59, #eb8b04);
 		-pie-background: linear-gradient(#feda59, #eb8b04);
-	}
-	.b-rubric-menu._orange .b-rubric-menu-item__arr {
-		background-image: url(../img/rubric_menu_item_arr_orange.png);
 	}
 
 .b-tips-list-item {
