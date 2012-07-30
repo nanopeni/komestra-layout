@@ -353,7 +353,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .version2 .b-banner-slider-item {
-	background: url('../img/buttons-sprite.png') 0 -685px;
+	background: url('../img/buttons-sprite.png') 0 -380px;
     font-family: Arial, 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
 }
 
@@ -403,7 +403,7 @@ input:focus::-webkit-input-placeholder {
     background: #a4bdac;
 }
 	.version2 .b-banner-slider-nav-item__normal div {
-        background: url('../img/buttons-sprite.png') -37px -657px;
+        background: url('../img/buttons-sprite.png') -37px -352px;
 	}
 
 .b-banner-slider-nav-item__active div {
@@ -411,7 +411,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 	.version2 .b-banner-slider-nav-item__active div {
-        background: url('../img/buttons-sprite.png') -15px -658px;
+        background: url('../img/buttons-sprite.png') -15px -353px;
 	}
 
 .b-banner-slider-nav-item._active {}
@@ -491,10 +491,10 @@ input:focus::-webkit-input-placeholder {
 		background-position: 0 -38px;
 	}
     .version2 .b-banner-slider__arr._prev:hover {
-        background: url("../img/buttons-sprite.png") -8px -621px;
+        background: url("../img/buttons-sprite.png") -8px -316px;
     }
     .version2 .b-banner-slider__arr._next:hover {
-        background: url(../img/buttons-sprite.png) -44px -621px;
+        background: url(../img/buttons-sprite.png) -44px -316px;
     }
 
 .b-banner-slider__arr._prev {
@@ -502,7 +502,7 @@ input:focus::-webkit-input-placeholder {
     left: 7px;
 }
 .version2 .b-banner-slider__arr._prev {
-             background: url("../img/buttons-sprite.png") -8px -592px;
+             background: url("../img/buttons-sprite.png") -8px -287px;
              left: -13px;
          }
 .b-banner-slider__arr._next {
@@ -511,7 +511,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .version2 .b-banner-slider__arr._next {
-        background: url(../img/buttons-sprite.png) -44px -592px;
+        background: url(../img/buttons-sprite.png) -44px -287px;
         right: -15px;
     }
 	.b-banner-slider .b-banner-slider-nav {
