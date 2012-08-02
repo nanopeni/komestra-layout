@@ -779,6 +779,10 @@ h1, h2, h3, h4, h5, .map-button, .map-button {
 #b-map .yellow ul {
     background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
 }
+#b-map .green ul {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -797px bottom transparent;
+}
+
 
 #b-map .map-button ul {
     line-height: 22px;
@@ -809,6 +813,14 @@ h1, h2, h3, h4, h5, .map-button, .map-button {
 #b-map .yellow:hover h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
 }
+#b-map .green h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll 0 -99px transparent;
+}
+#b-map .green:hover h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -225px -99px transparent;
+}
+
+
 
 #b-map .map-button h4 {
     color: #FFFFFF;
@@ -840,13 +852,13 @@ h1, h2, h3, h4, h5, .map-button, .map-button {
 }
 
 #b-map .map-button:hover h4 {
-    z-index: 5;
+    z-index: 6;
 }
 
 
 #b-map .map-list:hover ul {
     opacity: 1;
-    z-index: 4;
+    z-index: 5;
 }
 
 #b-map .map-button:hover .highlighted, .map-button .highlighted:hover {
@@ -1381,31 +1393,17 @@ h2.green-bubble {
     background-image: url('../img/corporate-map-wide-white.jpg');
 }
 
-
-.b-corporate-map .vectors {
-    background: url('../img/corporate-vectors.png') no-repeat scroll center top transparent;
-}
-
 .debug .b-corporate-map .dev {
     background: url('../img/temp/corporate-map-dev.jpg') no-repeat scroll center top transparent;
     opacity: 0.6;
-}
-
-
-#b-map .green ul {
-    background: url("../img/buttons-sprite.png") no-repeat scroll left bottom transparent;
 }
 
 .b-corporate-map .map-button .highlighted {
     background: url('../img/corporate-map-hl-sprite.png');
 }
 
-#b-map .green h4 {
-    background: url("../img/buttons-sprite.png") no-repeat scroll 0 -99px transparent;
-}
-#b-map .green:hover h4 {
-    background: url("../img/buttons-sprite.png") no-repeat scroll -225px -99px transparent;
-}
+
+
 
 .b-corporate-map .responsibility {
     left: -25px;
@@ -1499,8 +1497,6 @@ h2.green-bubble {
 .b-corporate-map .property .highlighted {
     background-position: 0 -288px;
     height: 273px;
-    le2ft: -71px;
-    to2p: -92px;
     width: 344px;
 }
 

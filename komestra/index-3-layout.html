@@ -514,6 +514,61 @@
         //});
     });
 
+    (function () {
+        var canvas = jQuery('#vectors')[0];
+        jQuery('#b-map .map-button').each(function() {
+            var jThis = jQuery(this);
+            var bulletPosition = jThis.find('.bullet').position();
+            var h4 = jThis.find('.map-list h4');
+            var h4Position = jThis.find('.map-list').position();
+
+            /*
+             console.log(this.className);
+             console.log('bullet offset', bulletPosition);
+             console.log('h4 width', h4.width());
+             console.log('h4 width', h4.height());
+             console.log('h4 position', h4Position);
+             */
+
+            var line = [
+                h4Position.left + (h4.width()/2),
+                h4Position.top + h4.height()/2,
+                bulletPosition.left,
+                bulletPosition.top
+            ];
+            var offset = [
+                Math.round(Math.min(line[0], line[2])),
+                Math.round(Math.min(line[1], line[3]))
+            ];
+            //console.log('line', line);
+
+            var canvas = jQuery('<canvas />');
+            canvas[0].width = Math.abs(line[0] - line[2]);
+            canvas[0].height = Math.abs(line[1] - line[3]);
+
+            canvas.css({
+                left: '' + offset[0] + 'px',
+                top: '' + offset[1] + 'px'
+            });
+
+            if($.browser.msie && $.browser.version<9) { G_vmlCanvasManager.initElement(canvas[0]); }
+
+            var ctx = canvas[0].getContext('2d');
+            ctx.beginPath();
+            ctx.strokeStyle = '#fff';
+            ctx.lineWidth = 2;
+            ctx.moveTo(line[0] - offset[0], line[1] - offset[1]);
+            ctx.lineTo(line[2] - offset[0], line[3] - offset[1] );
+            ctx.closePath();
+            ctx.stroke();
+
+            jQuery(this).append(canvas);
+        });
+
+        return false;
+    })();
+
+
 </script>
 
 </body>
