@@ -803,9 +803,11 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     color: #fff;
 }
 
+#b-map .yellow ul {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
+}
 
 .b-individual-map .map-button ul {
-    background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
     line-height: 22px;
     margin-left: -5px;
     margin-top: -7px;
@@ -818,15 +820,24 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     position: relative;
 }
 
-.b-individual-map .map-button .highlighted {
-    background: url('../img/individual-map-hl-sprite.png');
+.map-button .highlighted {
     opacity: 0;
     position:absolute;
     z-index: 2;
 }
 
-.b-individual-map h4 {
+.b-individual-map .map-button .highlighted {
+    background: url('../img/individual-map-hl-sprite.png');
+}
+
+#b-map .yellow h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll 0 0 transparent;
+}
+#b-map .yellow:hover h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
+}
+
+.b-individual-map h4 {
     color: #FFFFFF;
     font-weight: normal;
     height: 39px;
@@ -855,26 +866,22 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     left: 0;
 }
 
-.b-individual-map .map-button:hover h4 {
-    background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
+.map-button:hover h4 {
     z-index: 5;
 }
 
 
-.b-individual-map .map-list:hover ul {
+.map-list:hover ul {
     opacity: 1;
     z-index: 4;
 }
 
-.b-individual-map .map-button:hover .highlighted {
+.map-button:hover .highlighted, .map-button .highlighted:hover {
     opacity: 1;
 }
 
-.b-individual-map .map-button .highlighted:hover {
-    opacity: 1;
-}
 
-.b-individual-map .map-button ul, .b-individual-map .inactive, .b-individual-map .map-button .highlighted, .nav-rubrics ul {
+.map-button ul, .inactive, .map-button .highlighted, .nav-rubrics ul {
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
@@ -882,17 +889,8 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     transition: opacity 0.5s ease-in-out;
 }
 
-/*
-.b-individual-map .yellow-button .highlighted {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}
 
-*/
-
+/* positions */
 .b-individual-map .property {
     left: 90px;
     top: 54px;
@@ -989,7 +987,7 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     left: 88px;
 }
 
-
+/* eo positions */
 
 
 

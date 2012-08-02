@@ -66,7 +66,7 @@
 
 
             <div class="holder">
-                <div class="map-button property">
+                <div class="yellow map-button property">
                     <div class="map-list">
                         <h4>Имущество</h4>
                         <ul>
@@ -79,7 +79,7 @@
                     <div class="highlighted"></div>
                 </div>
 
-                <div class="map-button car">
+                <div class="yellow map-button car">
                     <div class="map-list">
                         <h4>Автомобиль</h4>
                         <ul>
@@ -92,7 +92,7 @@
                     <div class="highlighted"></div>
                 </div>
 
-                <div class="map-button travel">
+                <div class="yellow map-button travel">
                     <div class="map-list">
                         <h4>Путешествия</h4>
                         <ul>
@@ -105,7 +105,7 @@
                     <div class="highlighted"></div>
                 </div>
 
-                <div class="map-button health">
+                <div class="yellow map-button health">
                     <div class="map-list">
                         <h4>Жизнь и здоровье</h4>
                         <ul>
@@ -501,11 +501,9 @@
                 ];
                 //console.log('line', line);
 
-                var canvas = jQuery('<canvas />',
-                        {
-                            width:Math.max([line[0], line[2]]),
-                            height:Math.max([line[1], line[3]])
-                        });
+                var canvas = jQuery('<canvas />');
+                canvas[0].width = Math.abs(line[0] - line[2]);
+                canvas[0].height = Math.abs(line[1] - line[3]);
 
                 canvas.css({
                     left: '' + offset[0] + 'px',
