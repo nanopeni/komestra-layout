@@ -66,8 +66,8 @@
 
 
             <div class="holder">
-                <div class="yellow-button property">
-                    <div class="y-list">
+                <div class="map-button property">
+                    <div class="map-list">
                         <h4>Имущество</h4>
                         <ul>
                             <li><a href="#">Отпускник</a></li>
@@ -79,8 +79,8 @@
                     <div class="highlighted"></div>
                 </div>
 
-                <div class="yellow-button car">
-                    <div class="y-list">
+                <div class="map-button car">
+                    <div class="map-list">
                         <h4>Автомобиль</h4>
                         <ul>
                             <li><a href="#">Отпускник</a></li>
@@ -92,8 +92,8 @@
                     <div class="highlighted"></div>
                 </div>
 
-                <div class="yellow-button travel">
-                    <div class="y-list">
+                <div class="map-button travel">
+                    <div class="map-list">
                         <h4>Путешествия</h4>
                         <ul>
                             <li><a href="#">Отпускник</a></li>
@@ -105,8 +105,8 @@
                     <div class="highlighted"></div>
                 </div>
 
-                <div class="yellow-button health">
-                    <div class="y-list">
+                <div class="map-button health">
+                    <div class="map-list">
                         <h4>Жизнь и здоровье</h4>
                         <ul>
                             <li><a href="#">Отпускник</a></li>
@@ -455,7 +455,7 @@
 
 <script type="text/javascript">
 
-    jQuery('#b-map .yellow-button').mouseover(function(e){
+    jQuery('#b-map .map-button').mouseover(function(e){
         //var type=this.className.split(' ')[1];
         //console.log('over',type, this);
         jQuery('#inactive-map').addClass('visible');
@@ -464,7 +464,7 @@
         //});
     });
 
-    jQuery('#b-map .yellow-button').mouseout(function(e){
+    jQuery('#b-map .map-button').mouseout(function(e){
         //var type=this.className.split(' ')[1];
         //console.log('out',type, this);
         jQuery('#inactive-map').removeClass('visible');
@@ -475,11 +475,11 @@
 
     (function () {
             var canvas = jQuery('#vectors')[0];
-            jQuery('#b-map .yellow-button').each(function() {
+            jQuery('#b-map .map-button').each(function() {
                 var jThis = jQuery(this);
                 var bulletPosition = jThis.find('.bullet').position();
-                var h4 = jThis.find('.y-list h4');
-                var h4Position = jThis.find('.y-list').position();
+                var h4 = jThis.find('.map-list h4');
+                var h4Position = jThis.find('.map-list').position();
 
                 /*
                 console.log(this.className);
