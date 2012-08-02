@@ -1414,7 +1414,7 @@ h2.green-bubble {
     top: 202px;
 }
 .b-corporate-map .responsibility .map-list {
-    left: 171px;
+    left: 138px;
     top: 259px;
 }
 .b-corporate-map .responsibility .highlighted {
@@ -1434,7 +1434,7 @@ h2.green-bubble {
     top: 72px;
 }
 .b-corporate-map .cargo .map-list {
-    left: -22px;
+    left: -97px;
     top: -53px;
 }
 .b-corporate-map .cargo .highlighted {
@@ -1453,8 +1453,8 @@ h2.green-bubble {
     top: 25px;
 }
 .b-corporate-map .health .map-list {
-    left: 26px;
-    top: -118px;
+    left: 75px;
+    top: -97px;
 }
 .b-corporate-map .health .highlighted {
     background-position: -324px -179px;
@@ -1487,12 +1487,12 @@ h2.green-bubble {
     top: 28px;
 }
 .b-corporate-map .property .bullet {
-    left: 141px;
-    top: 184px;
+    left: 228px;
+    top: 170px;
 }
 .b-corporate-map .property .map-list {
-    left: 71px;
-    top: 92px;
+    left: 175px;
+    top: 77px;
 }
 .b-corporate-map .property .highlighted {
     background-position: 0 -288px;
