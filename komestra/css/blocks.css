@@ -1377,14 +1377,10 @@ h2.green-bubble {
     background-image: url('../img/corporate-map-wide.jpg');
 }
 
-
 .b-corporate-map .inactive {
     background-image: url('../img/corporate-map-wide-white.jpg');
-    opacity: 0;
 }
-.b-corporate-map .visible .inactive {
-    opacity: 1;
-}
+
 
 .b-corporate-map .vectors {
     background: url('../img/corporate-vectors.png') no-repeat scroll center top transparent;
@@ -1412,75 +1408,99 @@ h2.green-bubble {
 }
 
 .b-corporate-map .responsibility {
-    left: 146px;
-    top: 260px;
+    left: -25px;
+    top: 1px;
 }
 .b-corporate-map .responsibility .bullet {
-    top: 10px;
-    left: 10px;
+    left: 255px;
+    top: 202px;
 }
 .b-corporate-map .responsibility .map-list {
-    top: 10px;
-    left: 10px;
+    left: 171px;
+    top: 259px;
 }
 .b-corporate-map .responsibility .highlighted {
     background-position: -541px -1px;
     height: 253px;
-    left: -171px;
-    top: -259px;
     width: 355px;
 }
 
 
 
 .b-corporate-map .cargo {
-    left: 225px;
-    top: 59px;
+    left: 247px;
+    top: 112px;
+}
+.b-corporate-map .cargo .bullet {
+    left: 117px;
+    top: 72px;
+}
+.b-corporate-map .cargo .map-list {
+    left: -22px;
+    top: -53px;
 }
 .b-corporate-map .cargo .highlighted {
     background-position: -5px 0;
     height: 171px;
-    left: 22px;
-    top: 53px;
     width: 276px;
 }
 
 
 .b-corporate-map .health {
-    left: 480px;
-    top: 59px;
+    left: 454px;
+    top: 177px;
+}
+.b-corporate-map .health .bullet {
+    left: 72px;
+    top: 25px;
+}
+.b-corporate-map .health .map-list {
+    left: 26px;
+    top: -118px;
 }
 .b-corporate-map .health .highlighted {
     background-position: -324px -179px;
     height: 84px;
-    left: -26px;
-    top: 118px;
     width: 101px;
 }
 
 
 .b-corporate-map .car {
-    left: 541px;
-    top: 266px;
+    left: 534px;
+    top: 182px;
+}
+.b-corporate-map .car .bullet {
+    left: 66px;
+    top: 31px;
+}
+.b-corporate-map .car .map-list {
+    left: 7px;
+    top: 84px;
 }
 .b-corporate-map .car .highlighted {
     background-position: -357px -288px;
     height: 88px;
-    left: -7px;
-    top: -84px;
     width: 161px;
 }
 
 
 .b-corporate-map .property {
-    left: 690px;
-    top: 120px;
+    left: 619px;
+    top: 28px;
+}
+.b-corporate-map .property .bullet {
+    left: 141px;
+    top: 184px;
+}
+.b-corporate-map .property .map-list {
+    left: 71px;
+    top: 92px;
 }
 .b-corporate-map .property .highlighted {
     background-position: 0 -288px;
     height: 273px;
-    left: -71px;
-    top: -92px;
+    le2ft: -71px;
+    to2p: -92px;
     width: 344px;
 }
 
