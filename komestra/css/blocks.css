@@ -786,7 +786,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 }
 
 .b-individual-map .vectors {
-    background: url('../img/individual-vectors.png') no-repeat scroll center center transparent;
+    /*background: url('../img/individual-vectors.png') no-repeat scroll center center transparent;*/
     z-index: 2;
 }
 
@@ -820,7 +820,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 }
 
 .b-individual-map .yellow-button .highlighted {
-    background: url('../img/individual-map-hl-sprite-bullet.png');
+    background: url('../img/individual-map-hl-sprite.png');
     opacity: 0;
     position:absolute;
     z-index: 2;
@@ -846,10 +846,12 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     margin-left: -8px;
     margin-top: -8px;
     position: absolute;
+    z-index: 4;
 }
 
 .yellow-button canvas {
     position: absolute;
+    z-index: 3;
     top: 0;
     left: 0;
 }
@@ -904,7 +906,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     top: 0;
 }
 .b-individual-map .property .highlighted {
-    background-position: 1px -139px;
+    background-position: 0 -139px;
     height: 260px;
     width: 446px;
 }
@@ -1410,7 +1412,7 @@ h2.green-bubble {
 }
 
 .b-corporate-map .green-button .highlighted {
-    background: url('../img/corporate-map-hl-sprite-bullet.png');
+    background: url('../img/corporate-map-hl-sprite.png');
     opacity: 0;
     position:absolute;
     z-index: 2;
@@ -1469,29 +1471,18 @@ h2.green-bubble {
     left: 146px;
     top: 260px;
 }
-.b-corporate-map .cargo {
-    left: 225px;
-    top: 59px;
-}
-.b-corporate-map .health {
-    left: 480px;
-    top: 59px;
-}
-.b-corporate-map .car {
-    left: 541px;
-    top: 266px;
-}
-.b-corporate-map .property {
-    left: 690px;
-    top: 120px;
-}
-
 .b-corporate-map .responsibility .highlighted {
     background-position: -541px -1px;
     height: 253px;
     left: -171px;
     top: -259px;
     width: 355px;
+}
+
+
+.b-corporate-map .cargo {
+    left: 225px;
+    top: 59px;
 }
 .b-corporate-map .cargo .highlighted {
     background-position: -5px 0;
@@ -1500,6 +1491,12 @@ h2.green-bubble {
     top: 53px;
     width: 276px;
 }
+
+
+.b-corporate-map .health {
+    left: 480px;
+    top: 59px;
+}
 .b-corporate-map .health .highlighted {
     background-position: -324px -179px;
     height: 84px;
@@ -1507,12 +1504,24 @@ h2.green-bubble {
     top: 118px;
     width: 101px;
 }
+
+
+.b-corporate-map .car {
+    left: 541px;
+    top: 266px;
+}
 .b-corporate-map .car .highlighted {
     background-position: -357px -288px;
     height: 88px;
     left: -7px;
     top: -84px;
     width: 161px;
+}
+
+
+.b-corporate-map .property {
+    left: 690px;
+    top: 120px;
 }
 .b-corporate-map .property .highlighted {
     background-position: 0 -288px;

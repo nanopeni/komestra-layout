@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/blocks.css" />
-	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
+	<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
 	<script src="js/jquery.scrollable.min.js"></script>
 	<script src="js/functions.js"></script>
 </head>
@@ -480,11 +481,13 @@
                 var h4 = jThis.find('.y-list h4');
                 var h4Position = jThis.find('.y-list').position();
 
+                /*
                 console.log(this.className);
                 console.log('bullet offset', bulletPosition);
                 console.log('h4 width', h4.width());
                 console.log('h4 width', h4.height());
                 console.log('h4 position', h4Position);
+                */
 
                 var line = [
                     h4Position.left + (h4.width()/2),
@@ -496,7 +499,7 @@
                     Math.round(Math.min(line[0], line[2])),
                     Math.round(Math.min(line[1], line[3]))
                 ];
-                console.log('line', line);
+                //console.log('line', line);
 
                 var canvas = jQuery('<canvas />',
                         {
@@ -508,6 +511,8 @@
                     left: '' + offset[0] + 'px',
                     top: '' + offset[1] + 'px'
                 });
+
+                if($.browser.msie && $.browser.version<9) { G_vmlCanvasManager.initElement(canvas[0]); }
 
                 var ctx = canvas[0].getContext('2d');
                 ctx.beginPath();
@@ -522,19 +527,6 @@
             });
 
         return false;
-
-            if (canvas.getContext){
-                var ctx = canvas.getContext('2d');
-
-                // Stroked triangle
-                ctx.beginPath();
-                ctx.moveTo(125,125);
-                ctx.lineTo(125,45);
-                ctx.lineTo(45,125);
-                ctx.closePath();
-                ctx.stroke();
-
-            }
     })();
 
 </script>
