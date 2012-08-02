@@ -800,9 +800,13 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     width: 200px;
 }
 
+.yellow-button .y-list a {
+    color: #fff;
+}
+
 
 .b-individual-map .yellow-button ul {
-    background: url("../img/buttons-sprite.png") no-repeat scroll left bottom transparent;
+    background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
     line-height: 22px;
     margin-left: -5px;
     margin-top: -7px;
@@ -852,11 +856,13 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 
 .b-individual-map .yellow-button:hover h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
+    z-index: 5;
 }
+
 
 .b-individual-map .y-list:hover ul {
     opacity: 1;
-    z-index: 3;
+    z-index: 4;
 }
 
 .b-individual-map .yellow-button:hover .highlighted {
@@ -917,9 +923,9 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     width: 175px;
 }
 .b-individual-map .car .y-list {
-    position:absolute;
-    left: 12px;
-    top: -58px;
+    left: 152px;
+    position: absolute;
+    top: -79px;
 }
 .b-individual-map .car .highlighted {
     background-position: -4px -407px;
@@ -941,8 +947,8 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 }
 .b-individual-map .health .y-list {
     position:absolute;
-    left: 145px;
-    top: -38px;
+    left: 182px;
+    top: -52px;
 }
 .b-individual-map .health .highlighted {
     background-position: -302px -407px;
@@ -969,7 +975,7 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 }
 .b-individual-map .travel .y-list {
     position:absolute;
-    left: 164px;
+    left: 205px;
     top: 0;
 }
 .b-individual-map .travel .highlighted {
