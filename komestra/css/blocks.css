@@ -800,9 +800,13 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     width: 200px;
 }
 
+.yellow-button .y-list a {
+    color: #fff;
+}
+
 
 .b-individual-map .yellow-button ul {
-    background: url("../img/buttons-sprite.png") no-repeat scroll left bottom transparent;
+    background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
     line-height: 22px;
     margin-left: -5px;
     margin-top: -7px;
@@ -835,13 +839,30 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
     position: relative;
 }
 
+.yellow-button .bullet {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -91px -295px transparent;
+    height: 16px;
+    width: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: absolute;
+}
+
+.yellow-button canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .b-individual-map .yellow-button:hover h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
+    z-index: 5;
 }
+
 
 .b-individual-map .y-list:hover ul {
     opacity: 1;
-    z-index: 3;
+    z-index: 4;
 }
 
 .b-individual-map .yellow-button:hover .highlighted {
@@ -872,50 +893,107 @@ h1, h2, h3, h4, h5, .yellow-button, .green-button {
 */
 
 .b-individual-map .property {
-    left: 89px;
-    top: 56px;
-}
-.b-individual-map .car {
-    left: 470px;
-    top: 154px;
-}
-.b-individual-map .travel {
-    left: 660px;
+    left: 90px;
     top: 54px;
+    height: 260px;
+    width: 446px;
 }
-.b-individual-map .health {
-    left: 840px;
-    top: 133px;
+.b-individual-map .property .y-list {
+    position:absolute;
+    left: 2px;
+    top: 0;
+}
+.b-individual-map .property .highlighted {
+    background-position: 1px -139px;
+    height: 260px;
+    width: 446px;
+}
+.b-individual-map .property .bullet {
+    left: 186px;
+    top: 145px;
 }
 
-.b-individual-map .property .highlighted {
-    background-position: 0 -139px;
-    height: 260px;
-    left: 1px;
-    top: -2px;
-    width: 446px;
+
+
+
+.b-individual-map .car {
+    left: 458px;
+    top: 212px;
+    height: 83px;
+    width: 175px;
+}
+.b-individual-map .car .y-list {
+    left: 152px;
+    position: absolute;
+    top: -79px;
 }
 .b-individual-map .car .highlighted {
     background-position: -4px -407px;
     height: 83px;
-    left: -12px;
-    top: 58px;
     width: 175px;
 }
-.b-individual-map .travel .highlighted {
-    background-position: -182px -401px;
-    height: 59px;
-    left: -164px;
-    top: 0;
-    width: 115px;
+.b-individual-map .car .bullet {
+    left: 97px;
+    top: 29px;
+}
+
+
+
+
+
+.b-individual-map .health {
+    left: 695px;
+    top: 183px;
+}
+.b-individual-map .health .y-list {
+    position:absolute;
+    left: 182px;
+    top: -52px;
 }
 .b-individual-map .health .highlighted {
     background-position: -302px -407px;
     height: 125px;
-    left: -145px;
-    top: 50px;
     width: 201px;
 }
+.b-individual-map .health .bullet {
+    left: 192px;
+    top: 33px;
+}
+
+
+
+
+
+
+
+
+.b-individual-map .travel {
+    height: 59px;
+    left: 496px;
+    top: 54px;
+    width: 115px;
+}
+.b-individual-map .travel .y-list {
+    position:absolute;
+    left: 205px;
+    top: 0;
+}
+.b-individual-map .travel .highlighted {
+    background-position: -182px -401px;
+    height: 59px;
+    width: 115px;
+}
+.b-individual-map .travel .bullet {
+    top: 28px;
+    left: 88px;
+}
+
+
+
+
+
+
+
 
 
 
