@@ -65,7 +65,7 @@
 
 
         <div class="holder">
-            <div class="green-button responsibility">
+            <div class="green map-button responsibility">
                 <div class="map-list">
                     <h4>Ответственность</h4>
                     <ul>
@@ -74,11 +74,11 @@
                         <li><a href="#">Добрые соседи</a></li>
                     </ul>
                 </div>
-
+                <div class="bullet"></div>
                 <div class="highlighted"></div>
             </div>
 
-            <div class="green-button cargo">
+            <div class="green map-button cargo">
                 <div class="map-list">
                     <h4>Грузы</h4>
                     <ul>
@@ -87,11 +87,11 @@
                         <li><a href="#">Добрые соседи</a></li>
                     </ul>
                 </div>
-
+                <div class="bullet"></div>
                 <div class="highlighted"></div>
             </div>
 
-            <div class="green-button property">
+            <div class="green map-button property">
                 <div class="map-list">
                     <h4>Имущество</h4>
                     <ul>
@@ -100,11 +100,11 @@
                         <li><a href="#">Добрые соседи</a></li>
                     </ul>
                 </div>
-
+                <div class="bullet"></div>
                 <div class="highlighted"></div>
             </div>
 
-            <div class="green-button car">
+            <div class="green map-button car">
                 <div class="map-list">
                     <h4>Автопарк</h4>
                     <ul>
@@ -113,12 +113,12 @@
                         <li><a href="#">Добрые соседи</a></li>
                     </ul>
                 </div>
-
+                <div class="bullet"></div>
                 <div class="highlighted"></div>
             </div>
 
 
-            <div class="green-button health">
+            <div class="green map-button health">
                 <div class="map-list">
                     <h4>Жизнь и здоровье</h4>
                     <ul>
@@ -131,7 +131,7 @@
                         <li><a href="#">Зимняя стоянка</a></li>
                     </ul>
                 </div>
-
+                <div class="bullet"></div>
                 <div class="highlighted"></div>
             </div>
 
@@ -496,7 +496,7 @@
 
 <script type="text/javascript">
 
-    jQuery('#b-map .green-button').mouseover(function(e){
+    jQuery('#b-map .map-button').mouseover(function(e){
         //var type=this.className.split(' ')[1];
         //console.log('over',type, this);
         jQuery('#inactive-map').addClass('visible');
@@ -505,7 +505,7 @@
         //});
     });
 
-    jQuery('#b-map .green-button').mouseout(function(e){
+    jQuery('#b-map .map-button').mouseout(function(e){
         //var type=this.className.split(' ')[1];
         //console.log('out',type, this);
         jQuery('#inactive-map').removeClass('visible');

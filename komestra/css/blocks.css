@@ -747,7 +747,141 @@ input:focus::-webkit-input-placeholder {
 
 
 
-    /* individual layout */
+
+
+
+h1, h2, h3, h4, h5, .map-button, .map-button {
+    font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
+}
+
+
+#b-map  .inactive {
+    opacity: 0;
+}
+#b-map .visible .inactive {
+    opacity: 1;
+}
+
+.vectors {
+    z-index: 2;
+}
+
+
+#b-map .map-button {
+    position: absolute;
+    width: 200px;
+}
+
+#b-map .map-button .map-list a {
+    color: #fff;
+}
+
+#b-map .yellow ul {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
+}
+
+#b-map .map-button ul {
+    line-height: 22px;
+    margin-left: -5px;
+    margin-top: -7px;
+    opacity: 0;
+    padding-bottom: 34px;
+    padding-left: 37px;
+    padding-top: 13px;
+    width: 145px;
+    z-index: -1;
+    position: relative;
+}
+
+#b-map .map-button .highlighted {
+    opacity: 0;
+    position:absolute;
+    z-index: 2;
+}
+
+#b-map .map-list {
+    position: absolute;
+}
+
+#b-map .yellow h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll 0 0 transparent;
+}
+#b-map .yellow:hover h4 {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
+}
+
+#b-map .map-button h4 {
+    color: #FFFFFF;
+    font-weight: normal;
+    height: 39px;
+    line-height: 34px;
+    text-align: center;
+    width: 182px;
+    cursor: pointer;
+    z-index: 4;
+    position: relative;
+}
+
+#b-map .map-button .bullet {
+    background: url("../img/buttons-sprite.png") no-repeat scroll -91px -295px transparent;
+    height: 16px;
+    width: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: absolute;
+    z-index: 4;
+}
+
+#b-map .map-button canvas {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+#b-map .map-button:hover h4 {
+    z-index: 5;
+}
+
+
+#b-map .map-list:hover ul {
+    opacity: 1;
+    z-index: 4;
+}
+
+#b-map .map-button:hover .highlighted, .map-button .highlighted:hover {
+    opacity: 1;
+}
+
+
+.map-button ul, .inactive, .map-button .highlighted, .nav-rubrics ul {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* individual layout */
+/* positions */
+
+.b-individual-map .inactive {
+    background: url('../img/individual-map-white.jpg') no-repeat scroll center center transparent;
+}
+
+.b-individual-map .layer {
+    height: 385px;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.debug .b-individual-map .dev {
+    background: url('../img/temp/individual-map-dev.jpg') no-repeat scroll center center transparent;
+    opacity: 0.6;
+}
 
 .b-individual-map {
     height: 385px;
@@ -763,134 +897,11 @@ input:focus::-webkit-input-placeholder {
     width: 1000px;
 }
 
-
-h1, h2, h3, h4, h5, .map-button, .green-button {
-    font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
-}
-
-.b-individual-map .layer {
-    height: 385px;
-    left: 0;
-    margin-left: 0;
-    position: absolute;
-    width: 100%;
-}
-
-
-.b-individual-map .inactive {
-    background: url('../img/individual-map-white.jpg') no-repeat scroll center center transparent;
-    opacity: 0;
-}
-.b-individual-map .visible .inactive {
-    opacity: 1;
-}
-
-.vectors {
-    z-index: 2;
-}
-
-.debug .b-individual-map .dev {
-    background: url('../img/temp/individual-map-dev.jpg') no-repeat scroll center center transparent;
-    opacity: 0.6;
-}
-
-.map-button {
-    position: absolute;
-    width: 200px;
-}
-
-.map-button .map-list a {
-    color: #fff;
-}
-
-#b-map .yellow ul {
-    background: url("../img/buttons-sprite.png") no-repeat scroll -590px bottom transparent;
-}
-
-.b-individual-map .map-button ul {
-    line-height: 22px;
-    margin-left: -5px;
-    margin-top: -7px;
-    opacity: 0;
-    padding-bottom: 34px;
-    padding-left: 37px;
-    padding-top: 13px;
-    width: 145px;
-    z-index: -1;
-    position: relative;
-}
-
-.map-button .highlighted {
-    opacity: 0;
-    position:absolute;
-    z-index: 2;
-}
-
 .b-individual-map .map-button .highlighted {
     background: url('../img/individual-map-hl-sprite.png');
 }
 
-#b-map .yellow h4 {
-    background: url("../img/buttons-sprite.png") no-repeat scroll 0 0 transparent;
-}
-#b-map .yellow:hover h4 {
-    background: url("../img/buttons-sprite.png") no-repeat scroll -225px 0 transparent;
-}
 
-.b-individual-map h4 {
-    color: #FFFFFF;
-    font-weight: normal;
-    height: 39px;
-    line-height: 34px;
-    text-align: center;
-    width: 182px;
-    cursor: pointer;
-    z-index: 4;
-    position: relative;
-}
-
-.map-button .bullet {
-    background: url("../img/buttons-sprite.png") no-repeat scroll -91px -295px transparent;
-    height: 16px;
-    width: 16px;
-    margin-left: -8px;
-    margin-top: -8px;
-    position: absolute;
-    z-index: 4;
-}
-
-.map-button canvas {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-}
-
-.map-button:hover h4 {
-    z-index: 5;
-}
-
-
-.map-list:hover ul {
-    opacity: 1;
-    z-index: 4;
-}
-
-.map-button:hover .highlighted, .map-button .highlighted:hover {
-    opacity: 1;
-}
-
-
-.map-button ul, .inactive, .map-button .highlighted, .nav-rubrics ul {
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-
-/* positions */
 .b-individual-map .property {
     left: 90px;
     top: 54px;
@@ -898,7 +909,6 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     width: 446px;
 }
 .b-individual-map .property .map-list {
-    position:absolute;
     left: 2px;
     top: 0;
 }
@@ -923,7 +933,6 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
 }
 .b-individual-map .car .map-list {
     left: 152px;
-    position: absolute;
     top: -79px;
 }
 .b-individual-map .car .highlighted {
@@ -945,7 +954,6 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     top: 183px;
 }
 .b-individual-map .health .map-list {
-    position:absolute;
     left: 182px;
     top: -52px;
 }
@@ -973,7 +981,6 @@ h1, h2, h3, h4, h5, .map-button, .green-button {
     width: 115px;
 }
 .b-individual-map .travel .map-list {
-    position:absolute;
     left: 205px;
     top: 0;
 }
@@ -1388,85 +1395,33 @@ h2.green-bubble {
     opacity: 0.6;
 }
 
-.b-corporate-map .green-button {
-    position: absolute;
-    width: 200px;
-}
 
-
-.b-corporate-map .green-button ul {
+#b-map .green ul {
     background: url("../img/buttons-sprite.png") no-repeat scroll left bottom transparent;
-    line-height: 22px;
-    margin-left: -5px;
-    margin-top: -7px;
-    opacity: 0;
-    padding-bottom: 34px;
-    padding-left: 37px;
-    padding-top: 13px;
-    width: 145px;
-    z-index: -1;
-    position: relative;
 }
 
-.b-corporate-map .green-button .highlighted {
+.b-corporate-map .map-button .highlighted {
     background: url('../img/corporate-map-hl-sprite.png');
-    opacity: 0;
-    position:absolute;
-    z-index: 2;
 }
 
-.b-corporate-map h4 {
+#b-map .green h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll 0 -99px transparent;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-weight: normal;
-    height: 39px;
-    line-height: 34px;
-    position: relative;
-    text-align: center;
-    width: 184px;
-    z-index: 4;
 }
-
-.b-corporate-map .green-button:hover h4 {
+#b-map .green:hover h4 {
     background: url("../img/buttons-sprite.png") no-repeat scroll -225px -99px transparent;
 }
-
-.b-corporate-map .map-list:hover ul {
-    opacity: 1;
-    z-index: 3;
-}
-
-.b-corporate-map .green-button:hover .highlighted {
-    opacity: 1;
-}
-
-.b-corporate-map .green-button .highlighted:hover {
-    opacity: 1;
-}
-
-.b-corporate-map .green-button ul, .b-corporate-map .inactive, .b-corporate-map .green-button .highlighted {
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    -ms-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/*
-.b-corporate-map .yellow-button .highlighted {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}
-
-*/
 
 .b-corporate-map .responsibility {
     left: 146px;
     top: 260px;
+}
+.b-corporate-map .responsibility .bullet {
+    top: 10px;
+    left: 10px;
+}
+.b-corporate-map .responsibility .map-list {
+    top: 10px;
+    left: 10px;
 }
 .b-corporate-map .responsibility .highlighted {
     background-position: -541px -1px;
@@ -1475,6 +1430,7 @@ h2.green-bubble {
     top: -259px;
     width: 355px;
 }
+
 
 
 .b-corporate-map .cargo {
