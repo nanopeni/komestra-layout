@@ -1163,35 +1163,35 @@ h2.green-bubble {
     width: 186px;
 }
 
-.col1 ul {
+ul.type-one {
     font-size: 15px;
     line-height: 16px;
 }
 
 
-.col1 ul li:first-child, .col1 h4:first-child, .col1 ul li.active, .col1 ul li.active + li {
+ul.type-one li:first-child, .col1 h4:first-child, ul.type-one li.active, ul.type-one li.active + li {
     border: none;
 }
 
-.col1 ul li, .col1 h4 {
+ul.type-one li, .col1 h4 {
     border-top: 1px dotted #D8E7B3;
 }
 
-.col1 ul li {
+ul.type-one li {
     margin-left: 10px;
     padding-bottom: 7px;
     padding-top: 6px;
     width: 186px;
 }
 
-.col1 ul a {
+ul.type-one a {
     background: url("../img/the-sprite.png") no-repeat scroll -15px -124px transparent;
     display: block;
     padding-left: 20px;
     text-decoration: none;
 }
 
-.col1 ul li.active {
+ul.type-one li.active {
     background: url("../img/the-sprite.png") no-repeat scroll -254px -241px transparent;
     border: medium none;
     color: #FFFFFF;
