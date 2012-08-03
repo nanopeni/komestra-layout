@@ -1061,7 +1061,7 @@ h1 {
     width: 717px;
 }
 .content-menu ul {
-    padding-left: 285px;
+    padding-left: 231px;
     height: 200px;
     background-position: 0 -4px;
     background-repeat: no-repeat;
@@ -1072,7 +1072,7 @@ h1 {
 .content-menu li {
     float: left;
     height: 81px;
-    margin-right: 12px;
+    margin-right: 29px;
     width: 147px;
 }
 
