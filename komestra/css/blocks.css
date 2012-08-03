@@ -1186,20 +1186,72 @@ ul.type-one li {
 
 
 
-ul.type-one a, ul.type-two a {
+ul.type-one a {
     display: block;
     padding-left: 20px;
     text-decoration: none;
 }
 
+ul.type-two a {
+    display: block;
+    text-decoration: none;
+}
+
 ul.type-two li {
-    width: 186px;
+    margin-left: 10px;
     padding-bottom: 7px;
     padding-top: 6px;
+    width: 200px;
+}
+
+
+ul.type-two li li {
+    margin-left: 0;
+    padding-bottom: 7px;
+    padding-top: 6px;
+    width: 200px;
+}
+
+ul.type-two li h4 {
+    padding-bottom: 5px;
+
+}
+
+ul.type-two li>a {
+    background-position: -11px -7px;
+    padding-left: 15px;
+}
+
+ul.type-two li.opened>a {
+    background-position: -11px -91px;
+}
+
+ul.type-two li > ul {
+    display: none;
+}
+ul.type-two li.opened > ul {
+    display: block;
+}
+
+
+ul.type-two li li>a {
+    background-position: 1px -155px;
+    padding-left: 28px;
+}
+
+ul.type-two li li.active>a {
+    background-position: 1px -219px;
+    color: #e97a07;
+    font-family: 'OpenSansBold';
 }
 
 ul.type-two a {
-    background: url("../img/the-other-sprite.png") no-repeat scroll transparent;
+    background-image: url("../img/the-other-sprite.png");
+    background-repeat: no-repeat;
+}
+
+ul.type-two li.non-foldable a {
+    background-image: none;
 }
 
 ul.type-one a {
