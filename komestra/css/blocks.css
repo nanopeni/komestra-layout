@@ -354,7 +354,7 @@ input:focus::-webkit-input-placeholder {
 
 .version2 .b-banner-slider-item {
 	background: url('../img/buttons-sprite.png') 0 -380px;
-    font-family: Arial, 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
+    font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
 }
 
 .b-banner-slider-item__title {
