@@ -1163,7 +1163,7 @@ h2.green-bubble {
     width: 186px;
 }
 
-ul.type-one {
+ul.type-one, ul.type-two {
     font-size: 15px;
     line-height: 16px;
 }
@@ -1173,7 +1173,7 @@ ul.type-one li:first-child, .col1 h4:first-child, ul.type-one li.active, ul.type
     border: none;
 }
 
-ul.type-one li, .col1 h4 {
+ul.type-one li, ul.type-two li, .col1 h4 {
     border-top: 1px dotted #D8E7B3;
 }
 
@@ -1184,11 +1184,26 @@ ul.type-one li {
     width: 186px;
 }
 
-ul.type-one a {
-    background: url("../img/the-sprite.png") no-repeat scroll -15px -124px transparent;
+
+
+ul.type-one a, ul.type-two a {
     display: block;
     padding-left: 20px;
     text-decoration: none;
+}
+
+ul.type-two li {
+    width: 186px;
+    padding-bottom: 7px;
+    padding-top: 6px;
+}
+
+ul.type-two a {
+    background: url("../img/the-other-sprite.png") no-repeat scroll transparent;
+}
+
+ul.type-one a {
+    background: url("../img/the-sprite.png") no-repeat scroll -15px -124px transparent;
 }
 
 ul.type-one li.active {
