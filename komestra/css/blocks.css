@@ -353,7 +353,6 @@ input:focus::-webkit-input-placeholder {
 }
 
 .version2 .b-banner-slider-item {
-	background: url('../img/buttons-sprite.png') 0 -380px;
     font-family: 'OpenSansBold','Myriad Pro','Trebuchet MS',sans-serif;
 }
 
@@ -367,15 +366,17 @@ input:focus::-webkit-input-placeholder {
 }
 
 .version2 .b-banner-slider-item__title {
-		font-weight: normal;
-        color: #289f50;
-	}
-	.b-banner-slider-item__pic {
-		height: 254px;
-		display: block;
-		overflow: hidden;
-		border-radius: 0 0 5px 5px;
-	}
+    background: url('../img/buttons-sprite.png') 0 -380px;
+    font-weight: normal;
+    color: #289f50;
+}
+
+.b-banner-slider-item__pic {
+    height: 254px;
+    display: block;
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
+}
 
 .b-banner-slider-nav-item {
 	cursor: pointer;
@@ -1595,13 +1596,13 @@ ul.type-one li.active {
 }
 
 .nav-rubrics .orange ul {
-    background-position: -407px -302px;
+    background-position: -407px -625px;
     width: 142px;
     margin-left: -9px;
 }
 
 .nav-rubrics .green ul {
-    background-position: -204px -302px;
+    background-position: -204px -625px;
     width: 134px;
     margin-left: 12px;
 }
