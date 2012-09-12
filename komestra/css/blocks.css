@@ -1696,3 +1696,16 @@ ul.type-one li.active {
 
 
 
+/* calc form */
+
+.osago-calc label {
+    display: block;
+    clear: both;
+}
+
+.osago-calc label select, .osago-calc label input {
+    width: 200px;
+    float:right;
+}
+
+

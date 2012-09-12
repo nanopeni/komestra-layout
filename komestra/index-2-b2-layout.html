@@ -120,54 +120,55 @@
     <h2>РАСЧЁТ СТОИМОСТИ ПОЛИСА</h2>
 
     <!-- calculator panel -->
-    <form action="" method="post">
+    <form action="" method="post" onsubmit="return false">
 
         <div class="osago-calc">
             <div class="calc-form">
                 <label>
                     Собственник
-
                     <select id="owner">
                         <option value="0"></option>
-                        <option value="1">физическо лицо</option>
+                        <option value="1">физическое лицо</option>
                         <option value="2">юридическое лицо</option>
                     </select>
                     <input type="hidden" name="owner" value="" id="i_owner">
                 </label>
 
 
-                <label>Место регистрации ТС
+                <label>
+                    Место регистрации ТС
                     <select id="registration" disabled></select>
                     <input type="hidden" name="registration" value="" id="i_registration">
                 </label>
 
-                <label>Тип транспортного средства
+                <label>
+                    Тип транспортного средства
                     <select id="type" disabled></select>
                     <input type="hidden" name="type" value="" id="i_type">
                 </label>
 
-                <label>Мощность
+                <label>
+                    Мощность
                     <select id="power" disabled></select>
                     <input type="hidden" name="power" value="-" id="i_power">
                 </label>
 
-                <label>Водители
+                <label>
+                    Водители
                     <select id="age" disabled></select>
                     <input type="hidden" name="age" value="" id="i_age">
                 </label>
 
 
-                <label for="period">Период использования ТС
+                <label>
+                    Период использования ТС
                     <select id="period" disabled></select>
                     <input type="hidden" name="period" value="" id="i_period">
                 </label>
 
                 <div id="block_button_1">
                     <button id="button_step_1" disabled>Продолжить &mdash; произвести расчет</button>
-
-                    <div class="button-box" id="block_button_refrech" style="display:none">
-                        <input type="button" style="width:500px" value="Новый расчёт" onclick="location.reload()"/>
-                    </div>
+                    <button id="block_button_refrech" style="display:none" onclick="location.reload()">Новый расчёт</button>
                 </div>
 
                 <div id="block_step_2" style="display: none">
@@ -176,9 +177,55 @@
                 </div>
 
 
-                <div id="block_step_3" style="display:none">
+                <div id="block_step_3" style="dis2play:none">
+                    <div id="persons_container"><!-- --></div>
+
+                    <label>* Страхователь <input type="text" name="osago[fio]"/></label>
+                    <label>* Телефон <input type="text" name="osago[phone]"/></label>
+                    <label>* Собственник ТС <input type="text" name="osago[sobstvenik]"/></label>
+                    <label>* Марка, модель ТС <input type="text" name="osago[model]"/></label>
+                    <label>* Паспорт ТС <input type="text" name="osago[pasport]"/></label>
+                    <label>* Регистрационный знак <input type="text" name="osago[znak]"/></label>
 
 
+                    <label>* Водители, допущенные к управлению </label>
+
+                    <a href="#" class="incremented-minus" rel="MINUS">-</a>
+                    <input type="text" value="1" id="count_adult" readonly="readonly"/>
+                    <a href="#" class="incremented-plus" rel="PLUS">+</a>
+
+
+                    <div id="osago_driver">
+                        <div id="osago_driver_1">
+                            <label>* Фио <input type="text" name="osago[driver][fio][]"/></label>
+                            <label>* Водительское удостоверение <input type="text"
+                                                                       name="osago[driver][ticket][]"/></label>
+                        </div>
+                    </div>
+
+
+                    <label>* в какой страховой компании Вы покупали предыдущий полис ОСАГО
+                        <select name="osago[company]">
+                            <option value="Коместра-Авто">Коместра-Авто</option>
+                            <option value="Росгосстрах">Росгосстрах</option>
+                            <option value="Уралсиб">Уралсиб</option>
+                            <option value="Спасские ворота">Спасские ворота</option>
+                            <option value="Согаз">Согаз</option>
+                            <option value="Ингосстрах">Ингосстрах</option>
+                            <option value="МСК">МСК</option>
+                            <option value="другое">другое</option>
+                        </select>
+                    </label>
+
+                    <label>* способ получения полиса
+                        <select name="osago[get]" style="width:200px">
+                            <option value='в офисе "Коместры"'>в офисе "Коместры"</option>
+                            <option value="доставка на дом">доставка на дом (каждую среду с 16-00 до 18-00)</option>
+                        </select>
+                    </label>
+
+
+                    <button id="button_step_2" type="submit">Отправить заказ</button>
                 </div>
 
 
@@ -201,137 +248,26 @@
 
     <div  class="block-step" style="display:none">
 
-        <div id="persons_container"><!-- --></div>
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label >* Страхователь</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <input type="text"  name="osago[fio]" />
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label >* Телефон</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <input type="text" name="osago[phone]" />
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label>* Собственник ТС</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <input type="text" name="osago[sobstvenik]" />
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label >* Марка, модель ТС</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <input type="text" name="osago[model]" />
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label>* Паспорт ТС</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <input type="text" name="osago[pasport]" />
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label>* Регистрационный знак</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <input type="text"  name="osago[znak]" />
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label >* Водители, допущенные к управлению </label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-incremented">
-                <a href="#" class="incremented-minus" rel="MINUS"><!-- --></a><input type="text" value="1"  id="count_adult" readonly="readonly" /><a href="#" class="incremented-plus" rel="PLUS"><!-- --></a>
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
-        <div id="osago_driver">
-            <div id="osago_driver_1">
-
-                <div class="calc-box-values">
-                    <div class="calc-box-values-title" style="width:200px">
-                        <label >* Фио</label>
-                    </div>
-                    <div class="calc-box-values-field calc-box-values-field-input">
-                        <input type="text"  name="osago[driver][fio][]" />
-                    </div>
-                    <div class="clear"><!-- --></div>
-                </div>
-
-                <div class="calc-box-values">
-                    <div class="calc-box-values-title" style="width:200px">
-                        <label>* Водительское удостоверение</label>
-                    </div>
-                    <div class="calc-box-values-field calc-box-values-field-input">
-                        <input type="text" name="osago[driver][ticket][]" />
-                    </div>
-                    <div class="clear"><!-- --></div>
-                </div>
-
-            </div>
-
-        </div>
 
 
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label for="contact_last_name">* в какой страховой компании Вы покупали предыдущий полис ОСАГО</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <select name="osago[company]"  style="width:200px">
-                    <option value="Коместра-Авто">Коместра-Авто</option>
-                    <option value="Росгосстрах">Росгосстрах</option>
-                    <option value="Уралсиб">Уралсиб</option>
-                    <option value="Спасские ворота">Спасские ворота</option>
-                    <option value="Согаз">Согаз</option>
-                    <option value="Ингосстрах">Ингосстрах</option>
-                    <option value="МСК">МСК</option>
-                    <option value="другое">другое</option>
-                </select>
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
 
 
-        <div class="calc-box-values">
-            <div class="calc-box-values-title" style="width:200px">
-                <label for="contact_last_name">* способ получения полиса</label>
-            </div>
-            <div class="calc-box-values-field calc-box-values-field-input">
-                <select name="osago[get]"  style="width:200px">
-                    <option value='в офисе "Коместры"'>в офисе "Коместры"</option>
-                    <option value="доставка на дом">доставка на дом (каждую среду с 16-00 до 18-00)</option>
-                </select>
-            </div>
-            <div class="clear"><!-- --></div>
-        </div>
 
 
-        <div class="button-box" id="block_button_2" style="display:block;">
-            <input style="width:500px"  type="submit" value="Отправить заказ" id="button_step_2" />
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
