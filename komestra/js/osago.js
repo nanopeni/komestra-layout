@@ -466,6 +466,7 @@ function render_form(){
 
     }
     catch (e) {
+        console.log(e);
         alert('Необходимо указать все данные')
     }
 }
