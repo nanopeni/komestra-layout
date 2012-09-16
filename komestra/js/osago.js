@@ -417,7 +417,6 @@ function render_button_step_1(dis){
 }
 
 function render_form(){
-    try {
         var type = type_ts.get({
             select: ['price', 'abc', 'type'],
             where: 'id == ' + document.getElementById('type').value
@@ -458,17 +457,13 @@ function render_form(){
         //var sum = Tb * Kt * Km * Ko * Kc * Kbm;
         var sum = Tb * Kt * Km * Ko * Kc;
         var min_sum = age[0].discount * sum;
-        document.getElementById('policy_total').innerHTML = sum.toFixed(2) + ' руб.<br>Стоимость с максимальной скидкой: ' + min_sum.toFixed(2) + ' руб.<br>Точную цену полиса узнайте по тел.:44-00-88<br>Предоставим все заслуженные скидки';
-        document.getElementById('block_step_2').style.display = 'block';
-        document.getElementById('block_button_1').style.display = 'none';
-        $('#block_button_refrech').css('display', 'block');
-        document.getElementById('block_button_2').style.display = 'block';
-
-    }
-    catch (e) {
-        console.log(e);
-        alert('Необходимо указать все данные')
-    }
+        $('#policy_total').html(sum.toFixed(2) + ' руб.<br>Стоимость с максимальной скидкой: '
+            + min_sum.toFixed(2)
+            + ' руб.<br>Точную цену полиса узнайте по тел.:44-00-88<br>Предоставим все заслуженные скидки');
+        $('#block_step_2').show();
+        $('#button_step_1').hide();
+        $('#button_reset').show();
+        $('#block_button_2').show();
 }
 
 
@@ -485,24 +480,12 @@ function check_osago(th){
 
 jQuery(document).ready(function(){
     $('#owner').change(function(){
-        /*
-         switch(this.value){
-         case '1':
-         $('#block_year').css('display', 'block')
-         $('#label_year').html('Год выпуска ТС');
-         break;
-         case '2':
-         $('#block_year').css('display', 'block')
-         $('#label_year').html('Год приобретения ТС');
-         break;
-         default:
-         $('#block_year').css('display', 'none')
-         break;
-         }
-         */
         $('#i_owner').val(this.options[this.selectedIndex].text);
         render_registration(this.value);
     });
+    $('#owner').change();
+
+
     $('#registration').change(function(){
         $('#i_registration').val(this.options[this.selectedIndex].text);
         render_type(this.disabled)
@@ -537,27 +520,38 @@ jQuery(document).ready(function(){
         render_form()
     });
 
-    $('.calc-box-values-field-incremented').each(function(){
-        var $input = $(this).find('input').val(1);
-        $(this).find("a[rel^='PLUS']").click(function(){
-            var v = parseInt($input.val());
-            if (v < 10) {
-                v++;
-                $input.val(v);
-                $('#osago_driver_' + (v - 1)).after('<div id="osago_driver_' + v + '">' + $('#osago_driver_1').html() + '</div>');
-            }
-            return false;
-        });
-        $(this).find("a[rel^='MINUS']").click(function(){
-            var v = parseInt($input.val());
-            if (v > 1) {
-                $('#osago_driver_' + v).remove();
-                v--;
-                $input.val(v);
-            }
-            return false;
-        })
+
+    $('#count_adult').val(1);
+    $('#add-driver').click(function(){
+        var v = $('#count_adult').val();
+        if (v > 1) {
+            $('#osago_driver_' + v).remove();
+            v--;
+            $('#count_adult').val(v);
+        }
+        return false;
     });
+
+    $('#rem-driver').click(function(){
+        var v = $('#count_adult').val();
+        if (v < 10) {
+            v++;
+            $('#count_adult').val(v);
+            $('#osago_driver_' + (v - 1)).after('<div id="osago_driver_' + v + '">' + $('#osago_driver_1').html() + '</div>');
+        }
+        return false;
+    });
+
+
+    $('#button_reset').click(function(){
+        $('#owner').val('').change();
+        $('#button_reset').hide();
+        $('#button_step_1').show();
+        $('#block_step_3').hide();
+    });
+
+    $(function(){ $("select").uniform(); });
+
 
 });
 

@@ -1698,14 +1698,35 @@ ul.type-one li.active {
 
 /* calc form */
 
+.osago-calc {
+    width: 564px;
+}
+
 .osago-calc label {
     display: block;
     clear: both;
+    font-size: 14px;
+    font-family: 'OpenSansBold';
+    margin: 20px 0;
 }
 
-.osago-calc label select, .osago-calc label input {
+.osago-calc input, .osago-calc select, .osago-calc .selector {
     width: 200px;
     float:right;
+}
+
+
+
+.osago-calc label.drivers-control * {
+    width: auto;
+}
+
+.osago-calc #button_reset {
+    display: none;
+}
+
+.osago-calc #block_step_2 {
+    disp2lay: none;
 }
 
 
