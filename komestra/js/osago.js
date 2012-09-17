@@ -48,7 +48,7 @@ type_ts.insert(
     {
         id    : 2,
         abc   : 0,
-        name  : 'легковой автомобиль юридиического лица',
+        name  : 'легковой автомобиль юридического лица',
         price : 2375,
         owner : 2,
         type  : 1
@@ -550,7 +550,7 @@ jQuery(document).ready(function(){
         $('#block_step_3').hide();
     });
 
-    $(function(){ $("select").uniform(); });
+    //$(function(){ $("select").uniform(); });
 
 
 });

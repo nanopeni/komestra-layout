@@ -1710,23 +1710,44 @@ ul.type-one li.active {
     margin: 20px 0;
 }
 
-.osago-calc input, .osago-calc select, .osago-calc .selector {
+.osago-calc label>input, .osago-calc label>select, .osago-calc label>span {
     width: 200px;
     float:right;
 }
-
-
 
 .osago-calc label.drivers-control * {
     width: auto;
 }
 
+.osago-calc #block_step_2,
+.osago-calc #block_step_3,
 .osago-calc #button_reset {
     display: none;
 }
 
-.osago-calc #block_step_2 {
-    disp2lay: none;
+
+.osago-calc #block_step_2, .osago-calc #block_step_3 {
+    margin-top: 20px;
 }
 
+.osago-calc .big-button {
+    background: url("../img/the-sprite.png") no-repeat scroll 0 -756px transparent;
+    border: medium none;
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+    width: 560px;
+    font-family: 'OpenSansBold';
+    color: #b34400;
+    margin: 20px 0;
+}
+
+.osago-calc button[disabled] {
+    opacity: 0.5;
+}
+
+.osago-calc .drivers-control input {
+    width: 20px;
+    text-align: center;
+}
 

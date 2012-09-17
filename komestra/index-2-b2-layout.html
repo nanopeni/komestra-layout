@@ -75,11 +75,6 @@
         <li class="car"><a href="#">Автомобиль</a></li>
     </ul>
 
-    <div class="upper-links">
-        <span><a href="#">Страховой случай</a></span>
-        <span><a href="#">Стоимость</a></span>
-        <span><a href="#">КАСКО</a></span>
-    </div>
 </div>
 
 
@@ -118,11 +113,6 @@
     <script type="text/javascript" src="js/mvsql03.js"></script>
     <script type="text/javascript" src="js/osago.js"></script>
 
-    <select>
-        <option>one</option>
-        <option>two</option>
-    </select>
-
     <h2>РАСЧЁТ СТОИМОСТИ ПОЛИСА</h2>
 
     <!-- calculator panel -->
@@ -132,15 +122,12 @@
             <div class="calc-form">
                 <label>
                     Собственник
-                    <span class="input">
-                        <select id="owner">
-                            <option value="0"></option>
-                            <option value="1">физическое лицо</option>
-                            <option value="2">юридическое лицо</option>
-                        </select>
-                        <input type="hidden" name="owner" value="" id="i_owner">
-                    </span>
-
+                    <select id="owner">
+                        <option value="0"></option>
+                        <option value="1">физическое лицо</option>
+                        <option value="2">юридическое лицо</option>
+                    </select>
+                    <input type="hidden" name="owner" value="" id="i_owner">
                 </label>
 
 
@@ -175,12 +162,12 @@
                     <input type="hidden" name="period" value="" id="i_period">
                 </label>
 
-                    <button id="button_step_1" disabled>Продолжить &mdash; произвести расчет</button>
-                    <button id="button_reset">Новый расчёт</button>
+                    <button class="big-button" id="button_step_1" disabled>Продолжить &mdash; произвести расчет</button>
+                    <button class="big-button" id="button_reset">Новый расчёт</button>
 
                 <div id="block_step_2">
-                    <h2>Стоимость заказа:<strong id="policy_total"></strong></h2>
-                    <button onclick="$('#block_step_3').show()">Заказать полис</button>
+                    <h2>Стоимость заказа:</h2><p id="policy_total"></p>
+                    <button class="big-button" onclick="$('#block_step_3').show()">Заказать полис</button>
                 </div>
 
 
@@ -196,7 +183,7 @@
                     <label class="drivers-control" for="count_adult">* Водители, допущенные к управлению
 
                         <span>
-                            <button id="add-driver">-</button>
+                            <button id="add-driver">&ndash;</button>
                             <input type="text" value="1" id="count_adult" readonly="readonly"/>
                             <button id="rem-driver">+</button>
                         </span>
@@ -227,14 +214,14 @@
                     </label>
 
                     <label>* способ получения полиса
-                        <select name="osago[get]" style="width:200px">
+                        <select name="osago[get]">
                             <option value='в офисе "Коместры"'>в офисе "Коместры"</option>
                             <option value="доставка на дом">доставка на дом (каждую среду с 16-00 до 18-00)</option>
                         </select>
                     </label>
 
 
-                    <button id="button_step_2" type="submit">Отправить заказ</button>
+                    <button class="big-button" id="button_step_2" type="submit">Отправить заказ</button>
                 </div>
 
 
@@ -245,39 +232,6 @@
 
 
     <!-- /calculator panel -->
-
-
-
-
-
-
-
-
-
-
-    <div  class="block-step" style="display:none">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
 
 
