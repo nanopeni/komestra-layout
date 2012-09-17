@@ -1749,7 +1749,7 @@ ul.type-one li.active {
 .osago-calc #block_step_2,
 .osago-calc #block_step_3,
 .osago-calc #button_reset {
-    displ2ay: none;
+    display: none;
 }
 
 
