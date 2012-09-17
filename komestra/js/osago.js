@@ -241,12 +241,14 @@ function render_option(select, options, sel_option){
     }
     if (!select.disabled) {
         $(select).children().remove();
+        $(select).parent().addClass('disabled');
     }
     select.appendChild(set_option(0, ''));
     for (var i in options) {
         select.appendChild(set_option(options[i].id, options[i].text, sel_option));
     }
     select.disabled = false;
+    $(select).parent().removeClass('disabled');
 }
 
 
@@ -264,6 +266,7 @@ function render_registration(owner){
     else {
         select.disabled = true;
         $(select).children().remove();
+        $(select).parent().addClass('disabled');
     }
     render_type(select.disabled);
 }
@@ -550,7 +553,7 @@ jQuery(document).ready(function(){
         $('#block_step_3').hide();
     });
 
-    //$(function(){ $("select").uniform(); });
+    $(function(){ $("#osago-calc select").uniform(); });
 
 
 });

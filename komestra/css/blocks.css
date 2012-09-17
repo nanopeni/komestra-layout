@@ -1317,12 +1317,18 @@ ul.type-one li.active {
 }
 
 /* smaller banner rotator */
+.small {
+    position: relative;
+}
+
 .small .b-banner-slider__arr._prev {
     background-image: url("../img/banner_slider_arr_prev_small.png");
+    left: -11px;
 }
 
 .small .b-banner-slider__arr._next {
     background-image: url("../img/banner_slider_arr_next_small.png");
+    right: -11px;
 }
 
 .small .b-banner-slider__arr:hover {
@@ -1331,6 +1337,9 @@ ul.type-one li.active {
 .small .b-banner-slider__arr {
     height: 24px;
     width: 24px;
+    z-index: 2;
+    position: absolute;
+    top: 75px;
 }
 
 .small .b-banner-slider-item__title {
@@ -1352,8 +1361,8 @@ ul.type-one li.active {
 }
 
 .small .b-banner-slider-nav-item__normal div, .small .b-banner-slider-nav-item__active div {
-    height: 9px;
-    width: 9px;
+    height: 15px;
+    width: 13px;
 }
 
 .small .b-banner-slider .b-banner-slider-nav {
@@ -1704,15 +1713,33 @@ ul.type-one li.active {
 
 .osago-calc label {
     display: block;
-    clear: both;
+    position: relative;
     font-size: 14px;
     font-family: 'OpenSansBold';
     margin: 20px 0;
+    line-height: 30px;
 }
 
-.osago-calc label>input, .osago-calc label>select, .osago-calc label>span {
-    width: 200px;
-    float:right;
+.osago-calc label>input, .osago-calc label>select, .osago-calc label>span, .osago-calc label>.selector{
+    width: 280px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -5px;
+}
+
+.osago-calc label select {
+    width: 280px;
+}
+
+.osago-calc .input {
+    border: 2px solid #288F4C;
+    border-radius: 5px 5px 5px 5px;
+    height: 33px;
+    line-height: 31px;
+    padding: 0 10px;
+    width: 266px;
+    font-family: 'OpenSansRegular';
 }
 
 .osago-calc label.drivers-control * {
@@ -1722,7 +1749,7 @@ ul.type-one li.active {
 .osago-calc #block_step_2,
 .osago-calc #block_step_3,
 .osago-calc #button_reset {
-    display: none;
+    displ2ay: none;
 }
 
 

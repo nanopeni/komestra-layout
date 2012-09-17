@@ -118,7 +118,7 @@
     <!-- calculator panel -->
     <form action="" method="post" onsubmit="return false">
 
-        <div class="osago-calc">
+        <div class="osago-calc" id="osago-calc">
             <div class="calc-form">
                 <label>
                     Собственник
@@ -127,6 +127,7 @@
                         <option value="1">физическое лицо</option>
                         <option value="2">юридическое лицо</option>
                     </select>
+
                     <input type="hidden" name="owner" value="" id="i_owner">
                 </label>
 
@@ -166,26 +167,26 @@
                     <button class="big-button" id="button_reset">Новый расчёт</button>
 
                 <div id="block_step_2">
-                    <h2>Стоимость заказа:</h2><p id="policy_total"></p>
+                    <h2>Стоимость заказа: <strong id="policy_total"></strong></h2>
                     <button class="big-button" onclick="$('#block_step_3').show()">Заказать полис</button>
                 </div>
 
 
                 <div id="block_step_3">
-                    <label>* Страхователь <input type="text" name="osago[fio]"/></label>
-                    <label>* Телефон <input type="text" name="osago[phone]"/></label>
-                    <label>* Собственник ТС <input type="text" name="osago[sobstvenik]"/></label>
-                    <label>* Марка, модель ТС <input type="text" name="osago[model]"/></label>
-                    <label>* Паспорт ТС <input type="text" name="osago[pasport]"/></label>
-                    <label>* Регистрационный знак <input type="text" name="osago[znak]"/></label>
+                    <label>* Страхователь <input  class="input" type="text" name="osago[fio]"/></label>
+                    <label>* Телефон <input  class="input" type="text" name="osago[phone]"/></label>
+                    <label>* Собственник ТС <input  class="input" type="text" name="osago[sobstvenik]"/></label>
+                    <label>* Марка, модель ТС <input  class="input" type="text" name="osago[model]"/></label>
+                    <label>* Паспорт ТС <input  class="input" type="text" name="osago[pasport]"/></label>
+                    <label>* Регистрационный знак <input  class="input" type="text" name="osago[znak]"/></label>
 
 
                     <label class="drivers-control" for="count_adult">* Водители, допущенные к управлению
 
                         <span>
-                            <button id="add-driver">&ndash;</button>
-                            <input type="text" value="1" id="count_adult" readonly="readonly"/>
-                            <button id="rem-driver">+</button>
+                            <button  class="input" id="add-driver">&ndash;</button>
+                            <input  class="input" type="text" value="1" id="count_adult" readonly="readonly"/>
+                            <button  class="input" id="rem-driver">+</button>
                         </span>
 
                     </label>
@@ -193,14 +194,14 @@
 
                     <div id="osago_driver">
                         <div id="osago_driver_1">
-                            <label>* Фио <input type="text" name="osago[driver][fio][]"/></label>
-                            <label>* Водительское удостоверение <input type="text"
+                            <label>* Фио <input class="input" type="text" name="osago[driver][fio][]"/></label>
+                            <label>* Водительское удостоверение <input class="input" type="text"
                                                                        name="osago[driver][ticket][]"/></label>
                         </div>
                     </div>
 
 
-                    <label>* в какой страховой компании Вы покупали предыдущий полис ОСАГО
+                    <label>* в какой страховой компании <br />Вы покупали предыдущий полис ОСАГО
                         <select name="osago[company]">
                             <option value="Коместра-Авто">Коместра-Авто</option>
                             <option value="Росгосстрах">Росгосстрах</option>
