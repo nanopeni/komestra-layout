@@ -798,6 +798,11 @@ h1, h2, h3, h4, h5, .map-button, .map-button {
     position: relative;
 }
 
+#b-map .map-button ul li {
+    padding-bottom: 7px;
+    width: 121px;
+}
+
 #b-map .map-button .highlighted {
     opacity: 0;
     position:absolute;
@@ -1432,9 +1437,12 @@ ul.type-one li.active {
 
 
 /* corporate-map */
+.b-corporate-map-terminator {
+    margin-top: -224px;
+}
 
 .b-corporate-map {
-    height: 398px;
+    height: 550px;
     position: relative;
 }
 
