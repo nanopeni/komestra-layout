@@ -1786,3 +1786,80 @@ ul.type-one li.active {
     text-align: center;
 }
 
+
+
+/* about us clock widget */
+.about-clock-widget {
+    position: relative;
+    width: 890px;
+    height: 803px;
+}
+
+.about-clock-widget div {
+    position: absolute;
+    width: 890px;
+    height: 803px;
+}
+
+.about-clock-widget .l0-podlozhka {
+    background: url("../img/clock-l0-podlozhka.png");
+}
+
+.about-clock-widget .l1-faces {
+    background: url("../img/clock-l1-faces.png");
+}
+
+.about-clock-widget .l2-shturval {
+    background: url("../img/clock-l2-shturval.png");
+}
+
+.about-clock-widget .l3-nadpisi {
+    background: url("../img/clock-l3-nadpisi.png");
+}
+
+.about-clock-widget .l4-arrows div {
+    background: url("../img/clock-arrows.png") no-repeat;
+}
+
+.ie8 .about-clock-widget .l4-arrows-shadows {
+    display: none;
+}
+
+.about-clock-widget .l4-arrows-shadows {
+    top: 3px;
+    left: -3px;
+}
+.about-clock-widget .l4-arrows-shadows div {
+    background: url("../img/clock-arrows-shadows.png") no-repeat;
+}
+
+.about-clock-widget div .hour {
+    background-position: -176px -104px;
+    height: 494px;
+    left: 417px;
+    top: 158px;
+    width: 49px;
+}
+.about-clock-widget div .minute {
+    background-position: -28px -168px;
+    height: 700px;
+    left: 421px;
+    top: 55px;
+    width: 40px;
+}
+.about-clock-widget div .second {
+    background-position: -111px -22px;
+    height: 689px;
+    left: 422px;
+    top: 62px;
+    width: 36px;
+}
+
+.about-clock-widget .l5-center-pin {
+    background: url("../img/clock-l5-center-pin.png");
+}
+
+
+
+
+/* eo about us clock widget */

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie8 ie7"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/blocks.css" />
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollable.min.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+<section class="b-page i-clear">
+
+<header class="b-head">
+
+    <div class="b-head-panel i-pie">
+        <div class="b-head-panel__glare">
+            <div class="b-head-panel__center">
+
+                <h1 class="b-head-logo">
+                    <a href="/"><img src="img/head_logo.png" alt="Коместра — страховая группа" /></a>
+                </h1>
+
+                <div class="b-head-contacts">
+                    <div class="b-head-contacts__tel">
+                        <span class="b-head-contacts__code">(3822)</span>
+                        <span class="b-head-contacts__num">44-00-88</span>
+                    </div>
+                    <div class="b-head-contacts__more"><a href="#">Контактная информация</a></div>
+                </div>
+
+                <div class="b-head-slogan">
+                    <p>Красота спасет мир.</p>
+                    <p>Страхование — защитит.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="b-head-menu i-pie">
+        <table class="b-head-menu__table">
+            <tr>
+                <td><a class="i-pie" href="#">Гражданам</a></td>
+                <td><a class="i-pie" href="#">Организациям</a></td>
+                <td><a class="_active i-pie" href="#">О нас</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="map-stub" style="height:50px"></div>
+
+</header>
+
+
+<div class="b-body">
+<div class="b-body__wrap">
+
+<div class="content">
+
+    <div class="about-clock-widget">
+        <div class="l0-podlozhka"></div>
+        <div class="l1-faces"></div>
+        <div class="l2-shturval"></div>
+        <div class="l3-nadpisi"></div>
+        <div class="l4-arrows-shadows">
+            <div class="minute"></div>
+            <div class="hour"></div>
+            <div class="second"></div>
+        </div>
+        <div class="l4-arrows">
+            <div class="minute"></div>
+            <div class="hour"></div>
+            <div class="second"></div>
+        </div>
+        <div class="l5-center-pin"></div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            var holder = $('.about-clock-widget'),
+                    arrows =
+                    {
+                        second: holder.find('.second'),
+                        minute: holder.find('.minute'),
+                        hour: holder.find('.hour')
+                    },
+                    i;
+
+            function rotate(elements, deg, type) {
+                var rule = 'rotate(' + deg + 'deg)';
+
+                elements.css({
+                    'transform':rule,
+                    '-webkit-transform':rule,
+                    '-moz-transform':rule,
+                    '-ms-transform':rule,
+                    '-o-transform':rule
+                });
+
+                if ($.browser.msie && jQuery.browser.version < 9) {
+                    var rad = (deg * Math.PI) / 180.0,
+                            cos = Math.cos(rad),
+                            sin = Math.sin(rad),
+                            filter = 'progid:DXImageTransform.Microsoft.Matrix(sizingMethod="auto expand", M11 = '
+                                    + cos + ', M12 = ' + (-sin) + ', M21 = ' + sin + ', M22 = ' + cos + ')';
+
+                    elements.css({
+                        'filter': filter,
+                        '-ms-filter': filter,
+                        'margin-left': '' + (-Math.round(Math.abs(ieSizes[type].h * 0.5 * sin))) + 'px',
+                        'margin-top': '' + (0.5 * (ieSizes[type].h - ieSizes[type].w)
+                                - Math.round(Math.abs(ieSizes[type].h * 0.5 * cos))) + 'px'
+                    });
+                }
+            }
+
+            function setArrows() {
+                var d = new Date(),
+                        deg = {
+                            second: 6 * d.getSeconds(),
+                            minute: 6 * d.getMinutes(),
+                            hour: 30 * d.getHours()
+                        };
+                for (i in arrows) {
+                    rotate(arrows[i], deg[i], i);
+                }
+            }
+
+            if ($.browser.msie && jQuery.browser.version < 9) {
+                var ieSizes={};
+                for (i in arrows) {
+                    ieSizes[i] = {w: arrows[i].width(), h: arrows[i].height()};
+                }
+            }
+
+            setArrows();
+            setInterval(setArrows, 500);
+
+        });
+
+    </script>
+
+
+<ul class="footer-buttons">
+    <li class="one"><a href="#">КАК МЫ ВЫПЛАЧИВАЕМ</a></li>
+    <li class="two"><a href="#">ЕСЛИ ПРОИЗОШЁЛ СТРАХОВОЙ СЛУЧАЙ</a></li>
+    <li class="three"><a href="#">ЗАДАТЬ ВОПРОС</a></li>
+</ul>
+<div style="clear:both"></div>
+
+
+
+</div>
+
+</div>
+</div>
+
+<footer class="b-foot">
+    <div class="b-foot__wrap i-clear">
+        <div class="b-foot__left">
+
+            <div class="b-foot-copy">
+                &copy;2012 ОАО &laquo;Коместра-Томь&raquo;
+            </div>
+
+        </div>
+        <div class="b-foot__right">
+
+            <div class="b-foot-made">
+                <p>Создание сайта — «<a href="http://systemos.biz">Системосинтез</a>»</p>
+                <p>Работает на <a href="http://amiro.ru">Amiro.CMS</a></p>
+            </div>
+
+        </div>
+        <div class="b-foot__center">
+            <div class="b-foot__center__wrap">
+
+                <div class="b-foot-map">
+                    <a href="#">Карта сайта</a>
+                </div>
+
+                <form class="b-foot-search" action=".">
+                    <div class="b-foot-search__input">
+                        <div class="b-input"><input type="text" placeholder="Поиск по сайту" /></div>
+                    </div>
+                    <button class="b-btn _default" type="submit">
+                        <span class="b-btn__wrap i-dib i-pie">Найти</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</section>
+
+<div class="dev-layout-kom-index-2-b"></div>
+
+</body>
+</html>
