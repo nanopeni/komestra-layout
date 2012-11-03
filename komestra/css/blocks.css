@@ -1790,11 +1790,12 @@ ul.type-one li.active {
 
 /* about us clock widget */
 .about-clock-widget {
+    height: 803px;
+    margin-bottom: 60px;
+    margin-top: 60px;
     position: relative;
     width: 890px;
-    height: 803px;
 }
-
 .about-clock-widget div {
     position: absolute;
     width: 890px;
@@ -1859,7 +1860,175 @@ ul.type-one li.active {
     background: url("../img/clock-l5-center-pin.png");
 }
 
+.about-clock-widget .l6-points a {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: url('../img/clock-point.png') no-repeat;
+    text-decoration: none;
+}
 
+.about-clock-widget .l6-points a:hover {
+    background: url('../img/clock-point-hover.png');
+}
+
+.about-clock-widget .l6-points .p1 {
+    left: 404px;
+    top: -13px;
+}
+.about-clock-widget .l6-points .p1 span {
+    left: -42px;
+    top: -49px;
+    width: 131px;
+}
+
+.about-clock-widget .l6-points .p2 {
+    top: 99px;
+    left: 687px;
+}
+.about-clock-widget .l6-points .p2 span {
+    left: 37px;
+    top: -49px;
+    width: 197px;
+}
+
+.about-clock-widget .l6-points .p3 {
+    left: 792px;
+    top: 372px;
+}
+.about-clock-widget .l6-points .p3 span {
+    left: -9px;
+    top: -70px;
+    width: 163px;
+}
+
+.about-clock-widget .l6-points .p4 {
+    left: 672px;
+    top: 632px;
+}
+.about-clock-widget .l6-points .p4 span {
+    left: 40px;
+    top: 42px;
+    width: 131px;
+}
+
+.about-clock-widget .l6-points .p5 {
+    left: 409px;
+    top: 729px;
+}
+.about-clock-widget .l6-points .p5 span {
+    left: -37px;
+    top: 66px;
+    width: 131px;
+}
+
+.about-clock-widget .l6-points .p6 {
+    left: 156px;
+    top: 624px;
+}
+.about-clock-widget .l6-points .p6 span {
+    left: -153px;
+    top: 41px;
+    width: 154px;
+}
+
+.about-clock-widget .l6-points .p7 {
+    left: 46px;
+    top: 369px;
+}
+.about-clock-widget .l6-points .p7 span {
+    left: -69px;
+    top: -43px;
+    width: 117px;
+}
+
+.about-clock-widget .l6-points .p8 {
+    left: 139px;
+    top: 101px;
+}
+.about-clock-widget .l6-points .p8 span {
+    left: -158px;
+    top: -74px;
+    width: 178px;
+}
+
+.about-clock-widget .l6-points a span {
+    position: absolute;
+    font-family: 'OpenSansBold';
+    text-align: center;
+    font-size: 19px;
+    color: #3c9557;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.about-clock-widget .l6-points a:hover span {
+    border: 2px solid #3c9557;
+    border-radius: 5px;
+
+    background: #feed73;
+    background-image: linear-gradient(bottom, rgb(254,238,115) 9%, rgb(255,255,255) 90%);
+    background-image: -o-linear-gradient(bottom, rgb(254,238,115) 9%, rgb(255,255,255) 90%);
+    background-image: -moz-linear-gradient(bottom, rgb(254,238,115) 9%, rgb(255,255,255) 90%);
+    background-image: -webkit-linear-gradient(bottom, rgb(254,238,115) 9%, rgb(255,255,255) 90%);
+    background-image: -ms-linear-gradient(bottom, rgb(254,238,115) 9%, rgb(255,255,255) 90%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.09, rgb(254,238,115)),
+        color-stop(0.9, rgb(255,255,255))
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#feed73',GradientType=0 );
+
+    box-shadow:inset 0 0 20px #ffffff;
+
+}
+
+.about-clock-widget .l6-points .facetip {
+    border: 2px solid #3c9557;
+    border-radius: 5px;
+
+    width: 250px;
+    opacity: 0.9;
+    height: 80px;
+    background: #d9f1b6;
+    display: none;
+
+
+
+    background-image: linear-gradient(bottom, #FFFFFF 0%, #DBF1B6 44%);
+    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #DBF1B6 44%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #DBF1B6 44%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #DBF1B6 44%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #DBF1B6 44%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, #FFFFFF),
+        color-stop(0.44, #DBF1B6)
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#DBF1B6',GradientType=0 );
+
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.about-clock-widget .l6-points .facetip h3 {
+    color: #289f50;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.about-clock-widget .l6-points .facetip-holder {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
 
 
 /* eo about us clock widget */

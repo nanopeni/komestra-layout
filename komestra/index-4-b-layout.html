@@ -66,6 +66,7 @@
 
     <div class="about-clock-widget">
         <div class="l0-podlozhka"></div>
+        <div class="l0a-hover"></div>
         <div class="l1-faces"></div>
         <div class="l2-shturval"></div>
         <div class="l3-nadpisi"></div>
@@ -80,72 +81,89 @@
             <div class="second"></div>
         </div>
         <div class="l5-center-pin"></div>
+
+
+
+        <div class="l6-points">
+            <img src="img/clock-fake-map.png" usemap="#hover-map"/>
+            <map name="hover-map" id="hover-map">
+                <area target="" class="r r1" href="#R1" coords="444,61,452,124,553,145,633,200,692,154,578,81" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r2" href="#R2" coords="698,165,652,221,712,320,722,393,795,400,771,276" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r3" href="#R3" coords="727,422,790,412,758,543,678,635,640,592,698,518" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r4" href="#R4" coords="625,607,670,643,572,707,446,729,455,666,556,649" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r5" href="#R5" coords="429,667,435,729,300,696,216,640,267,599,335,644" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r6" href="#R6" coords="249,582,206,629,133,520,109,411,174,420,196,507" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r7" href="#R7" coords="109,397,131,267,198,166,235,220,187,309,173,392" title="" alt=""
+                      shape="poly">
+                <area target="" class="r r8" href="#R8" coords="209,160,309,89,431,62,428,127,330,149,257,199" title="" alt=""
+                      shape="poly">
+                <area target="" class="f f1" href="#F1" coords="455,349,450,130,555,152,629,203,470,358,463,352" title="" alt=""
+                      shape="poly">
+                <area target="" class="f f2" href="#F2" coords="498,383,656,231,706,318,714,394" title="" alt="" shape="poly">
+                <area target="" class="f f3" href="#F3" coords="490,429,637,587,697,517,716,422" title="" alt="" shape="poly">
+                <area target="" class="f f4" href="#F4" coords="454,469,455,661,550,648,619,604,474,460" title="" alt="" shape="poly">
+                <area target="" class="f f5" href="#F5" coords="407,459,272,596,337,643,432,661,426,469" title="" alt="" shape="poly">
+                <area target="" class="f f6" href="#F6" coords="384,423,389,438,253,577,198,505,177,420,370,422" title="" alt=""
+                      shape="poly">
+                <area target="" class="f f7" href="#F7" coords="382,396,389,379,238,223,188,311,174,395" title="" alt="" shape="poly">
+                <area target="" class="f f8" href="#F8" coords="409,359,427,345,424,131,325,157,260,203" title="" alt="" shape="poly">
+            </map>
+
+            <a class="p1" href="#vizitka"><span>Визитка</span></a>
+            <a class="p2" href="#top-management"><span>Топ-менеджмент</span></a>
+            <a class="p3" href="#official"><span>Официальная информация</span></a>
+            <a class="p4" href="#contacts"><span>Контакты</span></a>
+            <a class="p5" href="#media-center"><span>Медиа-центр</span></a>
+            <a class="p6" href="#career"><span>Карьера<br /> в &laquo;Коместре&raquo;</span></a>
+            <a class="p7" href="#vip"><span>VIP-клиенту</span></a>
+            <a class="p8" href="#advantages"><span>Наши преимущества</span></a>
+
+
+            <div class="facetip-holder">
+                <div class="facetip f1">
+                    <h3>КНЫШ<br /> Анна Анатольевна</h3>
+                    <span>Генеральный директор</span>
+                </div>
+                <div class="facetip f2">
+                    <h3>КАМИНСКАЯ<br /> Марина Давидовна</h3>
+                    <span>Главный бухгалтер</span>
+                </div>
+                <div class="facetip f3">
+                    <h3>АНДРЕЕВА<br /> Елена Владимировна</h3>
+                    <span>Директор агентства</span>
+                </div>
+                <div class="facetip f4">
+                    <h3>РЫБИНА<br>Наталья Андреевна</h3>
+                    <span>Директор филиала<br> &laquo;Коместра-Северск&raquo;</span>
+                </div>
+                <div class="facetip f5">
+                    <h3>СЕРГИЕВСКАЯ<br> Наталья Валерьевна</h3>
+                    <span>Директор агентства &laquo;Центральное&raquo;</span>
+                </div>
+                <div class="facetip f6">
+                    <h3>ЧМУХ<br> Мария Вадимовна</h3>
+                    <span>Психолог, бизнес-тренер</span>
+                </div>
+                <div class="facetip f7">
+                    <h3>ДМИТРИЕВА<br>Светлана Владиславовна</h3>
+                    <span>Директор департамента страхования</span>
+                </div>
+                <div class="facetip f8">
+                    <h3>ЧМУХ<br> Вадим Натанович</h3>
+                    <span>Председатель совета директоров</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <script type="text/javascript">
-        $(function(){
-            var holder = $('.about-clock-widget'),
-                    arrows =
-                    {
-                        second: holder.find('.second'),
-                        minute: holder.find('.minute'),
-                        hour: holder.find('.hour')
-                    },
-                    i;
-
-            function rotate(elements, deg, type) {
-                var rule = 'rotate(' + deg + 'deg)';
-
-                elements.css({
-                    'transform':rule,
-                    '-webkit-transform':rule,
-                    '-moz-transform':rule,
-                    '-ms-transform':rule,
-                    '-o-transform':rule
-                });
-
-                if ($.browser.msie && jQuery.browser.version < 9) {
-                    var rad = (deg * Math.PI) / 180.0,
-                            cos = Math.cos(rad),
-                            sin = Math.sin(rad),
-                            filter = 'progid:DXImageTransform.Microsoft.Matrix(sizingMethod="auto expand", M11 = '
-                                    + cos + ', M12 = ' + (-sin) + ', M21 = ' + sin + ', M22 = ' + cos + ')';
-
-                    elements.css({
-                        'filter': filter,
-                        '-ms-filter': filter,
-                        'margin-left': '' + (-Math.round(Math.abs(ieSizes[type].h * 0.5 * sin))) + 'px',
-                        'margin-top': '' + (0.5 * (ieSizes[type].h - ieSizes[type].w)
-                                - Math.round(Math.abs(ieSizes[type].h * 0.5 * cos))) + 'px'
-                    });
-                }
-            }
-
-            function setArrows() {
-                var d = new Date(),
-                        deg = {
-                            second: 6 * d.getSeconds(),
-                            minute: 6 * d.getMinutes(),
-                            hour: 30 * d.getHours()
-                        };
-                for (i in arrows) {
-                    rotate(arrows[i], deg[i], i);
-                }
-            }
-
-            if ($.browser.msie && jQuery.browser.version < 9) {
-                var ieSizes={};
-                for (i in arrows) {
-                    ieSizes[i] = {w: arrows[i].width(), h: arrows[i].height()};
-                }
-            }
-
-            setArrows();
-            setInterval(setArrows, 500);
-
-        });
-
-    </script>
+    <script type="text/javascript" src="js/clock.js"></script>
 
 
 <ul class="footer-buttons">
@@ -201,8 +219,6 @@
 </footer>
 
 </section>
-
-<div class="dev-layout-kom-index-2-b"></div>
 
 </body>
 </html>
