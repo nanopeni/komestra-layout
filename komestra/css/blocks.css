@@ -1834,6 +1834,14 @@ ul.type-one li.active {
     background: url("../img/clock-arrows-shadows.png") no-repeat;
 }
 
+.transitioned {
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
 .about-clock-widget div .hour {
     background-position: -176px -104px;
     height: 494px;

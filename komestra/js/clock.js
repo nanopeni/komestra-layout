@@ -6,10 +6,22 @@ $(function(){
             minute: holder.find('.minute'),
             hour: holder.find('.hour')
         },
-        i;
+        i,
+        prev = {second: 0, minute: 0, hour: 0};
 
     function rotate(elements, deg, type) {
         var rule = 'rotate(' + deg + 'deg)';
+
+        if (prev[type] == deg) {
+            return;
+        }
+
+        if (prev[type] > deg) {
+            elements.removeClass('transitioned');
+        }
+        else {
+            elements.addClass('transitioned');
+        }
 
         elements.css({
             'transform':rule,
@@ -18,6 +30,8 @@ $(function(){
             '-ms-transform':rule,
             '-o-transform':rule
         });
+
+        prev[type] = deg;
 
         if ($.browser.msie && jQuery.browser.version < 9) {
             var rad = (deg * Math.PI) / 180.0,
