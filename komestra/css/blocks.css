@@ -1821,6 +1821,10 @@ ul.type-one li.active {
 .about-clock-widget .l4-arrows div {
     background: url("../img/clock-arrows.png") no-repeat;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    transform: translate3d(0.5px, 0px, 0px);
+    -webkit-transform: translateZ(0);
 }
 
 .ie8 .about-clock-widget .l4-arrows-shadows {

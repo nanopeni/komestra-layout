@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="ie8 ie7"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+    <title>Главная</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/blocks.css" />
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollable.min.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+<section class="b-page i-clear">
+
+<header class="b-head">
+
+    <div class="b-head-panel i-pie">
+        <div class="b-head-panel__glare">
+            <div class="b-head-panel__center">
+
+                <h1 class="b-head-logo">
+                    <a href="/"><img src="img/head_logo.png" alt="Коместра — страховая группа" /></a>
+                </h1>
+
+                <div class="b-head-contacts">
+                    <div class="b-head-contacts__tel">
+                        <span class="b-head-contacts__code">(3822)</span>
+                        <span class="b-head-contacts__num">44-00-88</span>
+                    </div>
+                    <div class="b-head-contacts__more"><a href="#">Контактная информация</a></div>
+                </div>
+
+                <div class="b-head-slogan">
+                    <p>Красота спасет мир.</p>
+                    <p>Страхование — защитит.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="b-head-menu i-pie">
+        <table class="b-head-menu__table">
+            <tr>
+                <td><a class="i-pie" href="#">Гражданам</a></td>
+                <td><a class="i-pie" href="#">Организациям</a></td>
+                <td><a class="_active i-pie" href="#">О нас</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="map-stub" style="height:50px"></div>
+
+</header>
+
+
+<div class="b-body">
+    <div class="b-body__wrap">
+
+        <div class="content">
+
+            <div>
+                <button onclick="clockWidget.useTransition(false)">Отключить transition animation</button>
+                <button onclick="clockWidget.useTransition(true)">Включить transition animation</button>
+                <button onclick="clockWidget.useShadows(false)">Отключить тени стрелок</button>
+                <button onclick="clockWidget.useShadows(true)">Включить тени стрелок</button>
+                <button onclick="clockWidget.stop()">Остановить</button>
+                <button onclick="clockWidget.start()">Запустить</button>
+                <button onclick="clockWidget.update()">Обновить</button>
+            </div>
+
+            <div class="about-clock-widget">
+                <div class="l0-podlozhka"></div>
+                <div class="l0a-hover"></div>
+                <div class="l1-faces"></div>
+                <div class="l2-shturval"></div>
+                <div class="l3-nadpisi"></div>
+                <div class="l4-arrows-shadows">
+                    <div class="minute"></div>
+                    <div class="hour"></div>
+                    <div class="second"></div>
+                </div>
+                <div class="l4-arrows">
+                    <div class="minute"></div>
+                    <div class="hour"></div>
+                    <div class="second"></div>
+                </div>
+                <div class="l5-center-pin"></div>
+
+
+
+                <div class="l6-points">
+                    <img src="img/clock-fake-map.png" usemap="#hover-map"/>
+                    <map name="hover-map" id="hover-map">
+                        <area target="" class="r r1" href="#R1" coords="444,61,452,124,553,145,633,200,692,154,578,81" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r2" href="#R2" coords="698,165,652,221,712,320,722,393,795,400,771,276" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r3" href="#R3" coords="727,422,790,412,758,543,678,635,640,592,698,518" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r4" href="#R4" coords="625,607,670,643,572,707,446,729,455,666,556,649" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r5" href="#R5" coords="429,667,435,729,300,696,216,640,267,599,335,644" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r6" href="#R6" coords="249,582,206,629,133,520,109,411,174,420,196,507" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r7" href="#R7" coords="109,397,131,267,198,166,235,220,187,309,173,392" title="" alt=""
+                              shape="poly">
+                        <area target="" class="r r8" href="#R8" coords="209,160,309,89,431,62,428,127,330,149,257,199" title="" alt=""
+                              shape="poly">
+                        <area target="" class="f f1" href="#F1" coords="455,349,450,130,555,152,629,203,470,358,463,352" title="" alt=""
+                              shape="poly">
+                        <area target="" class="f f2" href="#F2" coords="498,383,656,231,706,318,714,394" title="" alt="" shape="poly">
+                        <area target="" class="f f3" href="#F3" coords="490,429,637,587,697,517,716,422" title="" alt="" shape="poly">
+                        <area target="" class="f f4" href="#F4" coords="454,469,455,661,550,648,619,604,474,460" title="" alt="" shape="poly">
+                        <area target="" class="f f5" href="#F5" coords="407,459,272,596,337,643,432,661,426,469" title="" alt="" shape="poly">
+                        <area target="" class="f f6" href="#F6" coords="384,423,389,438,253,577,198,505,177,420,370,422" title="" alt=""
+                              shape="poly">
+                        <area target="" class="f f7" href="#F7" coords="382,396,389,379,238,223,188,311,174,395" title="" alt="" shape="poly">
+                        <area target="" class="f f8" href="#F8" coords="409,359,427,345,424,131,325,157,260,203" title="" alt="" shape="poly">
+                    </map>
+
+                    <a class="p1" href="#vizitka"><span><i>Визитка</i></span></a>
+                    <a class="p2" href="#top-management"><span><i>Топ-менеджмент</i></span></a>
+                    <a class="p3" href="#official"><span><i>Официальная информация</i></span></a>
+                    <a class="p4" href="#contacts"><span><i>Контакты</i></span></a>
+                    <a class="p5" href="#media-center"><span><i>Медиа-центр</i></span></a>
+                    <a class="p6" href="#career"><span><i>Карьера<br /> в &laquo;Коместре&raquo;</i></span></a>
+                    <a class="p7" href="#vip"><span><i>VIP-клиенту</i></span></a>
+                    <a class="p8" href="#advantages"><span><i>Наши преимущества</i></span></a>
+
+
+                    <div class="facetip-holder">
+                        <div class="facetip f1"><div class="facetip-inner">
+                            <h3>КНЫШ<br /> Анна Анатольевна</h3>
+                            <span>Генеральный директор</span>
+                        </div></div>
+                        <div class="facetip f2"><div class="facetip-inner">
+                            <h3>КАМИНСКАЯ<br /> Марина Давидовна</h3>
+                            <span>Главный бухгалтер</span>
+                        </div></div>
+                        <div class="facetip f3"><div class="facetip-inner">
+                            <h3>АНДРЕЕВА<br /> Елена Владимировна</h3>
+                            <span>Директор агентства</span>
+                        </div></div>
+                        <div class="facetip f4"><div class="facetip-inner">
+                            <h3>РЫБИНА<br>Наталья Андреевна</h3>
+                            <span>Директор филиала<br> &laquo;Коместра-Северск&raquo;</span>
+                        </div></div>
+                        <div class="facetip f5"><div class="facetip-inner">
+                            <h3>СЕРГИЕВСКАЯ<br> Наталья Валерьевна</h3>
+                            <span>Директор агентства &laquo;Центральное&raquo;</span>
+                        </div></div>
+                        <div class="facetip f6"><div class="facetip-inner">
+                            <h3>ЧМУХ<br> Мария Вадимовна</h3>
+                            <span>Психолог, бизнес-тренер</span>
+                        </div></div>
+                        <div class="facetip f7"><div class="facetip-inner">
+                            <h3>ДМИТРИЕВА<br>Светлана Владиславовна</h3>
+                            <span>Директор департамента страхования</span>
+                        </div></div>
+                        <div class="facetip f8"><div class="facetip-inner">
+                            <h3>ЧМУХ<br> Вадим Натанович</h3>
+                            <span>Председатель совета директоров</span>
+                        </div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script type="text/javascript" src="js/clock.js"></script>
+
+
+            <ul class="footer-buttons">
+                <li class="one"><a href="#">КАК МЫ ВЫПЛАЧИВАЕМ</a></li>
+                <li class="two"><a href="#">ЕСЛИ ПРОИЗОШЁЛ СТРАХОВОЙ СЛУЧАЙ</a></li>
+                <li class="three"><a href="#">ЗАДАТЬ ВОПРОС</a></li>
+            </ul>
+            <div style="clear:both"></div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<footer class="b-foot">
+    <div class="b-foot__wrap i-clear">
+        <div class="b-foot__left">
+
+            <div class="b-foot-copy">
+                &copy;2012 ОАО &laquo;Коместра-Томь&raquo;
+            </div>
+
+        </div>
+        <div class="b-foot__right">
+
+            <div class="b-foot-made">
+                <p>Создание сайта — «<a href="http://systemos.biz">Системосинтез</a>»</p>
+                <p>Работает на <a href="http://amiro.ru">Amiro.CMS</a></p>
+            </div>
+
+        </div>
+        <div class="b-foot__center">
+            <div class="b-foot__center__wrap">
+
+                <div class="b-foot-map">
+                    <a href="#">Карта сайта</a>
+                </div>
+
+                <form class="b-foot-search" action=".">
+                    <div class="b-foot-search__input">
+                        <div class="b-input"><input type="text" placeholder="Поиск по сайту" /></div>
+                    </div>
+                    <button class="b-btn _default" type="submit">
+                        <span class="b-btn__wrap i-dib i-pie">Найти</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</section>
+
+</body>
+</html>

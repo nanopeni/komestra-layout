@@ -2,12 +2,14 @@ $(function(){
     var holder = $('.about-clock-widget'),
         arrows =
         {
-            second: holder.find('.second'),
-            minute: holder.find('.minute'),
-            hour: holder.find('.hour')
+            second: holder.find('.second:visible'),
+            minute: holder.find('.minute:visible'),
+            hour: holder.find('.hour:visible')
         },
         i,
-        prev = {second: 0, minute: 0, hour: 0};
+        prev = {second: 0, minute: 0, hour: 0},
+        useTransition = true,
+        timer = false;
 
     function rotate(elements, deg, type) {
         var rule = 'rotate(' + deg + 'deg)';
@@ -16,11 +18,13 @@ $(function(){
             return;
         }
 
-        if (prev[type] > deg) {
-            elements.removeClass('transitioned');
-        }
-        else {
-            elements.addClass('transitioned');
+        if (useTransition) {
+            if (prev[type] > deg) {
+                elements.removeClass('transitioned');
+            }
+            else {
+                elements.addClass('transitioned');
+            }
         }
 
         elements.css({
@@ -97,7 +101,47 @@ $(function(){
 
 
 
-    setArrows();
-    setInterval(setArrows, 250);
 
+    window.clockWidget = {
+        useTransition: function(enable) {
+            useTransition = enable;
+            for (var e in arrows) {
+                if (useTransition) {
+                    arrows[e].addClass('transitioned');
+                }
+                else {
+                    arrows[e].removeClass('transitioned');
+                }
+            }
+        },
+
+        useShadows: function(enable) {
+            if (enable) {
+                holder.find('.l4-arrows-shadows').show();
+            }
+            else {
+                holder.find('.l4-arrows-shadows').hide();
+            }
+
+            arrows =
+            {
+                second: holder.find('.second:visible'),
+                minute: holder.find('.minute:visible'),
+                hour: holder.find('.hour:visible')
+            };
+        },
+
+        update: function() {setArrows();},
+        start: function() {
+            timer = setInterval(setArrows, 250);
+        },
+        stop: function() {
+            clearTimeout(timer);
+        }
+
+    };
+
+    window.clockWidget.start();
 });
+
+
