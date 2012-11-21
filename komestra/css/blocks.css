@@ -1806,6 +1806,10 @@ ul.type-one li.active {
     background: url("../img/clock-l0-podlozhka.png");
 }
 
+.about-clock-widget .l123 {
+    background: url("../img/clock-l123.png");
+}
+
 .about-clock-widget .l1-faces {
     background: url("../img/clock-l1-faces.png");
 }
